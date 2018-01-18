@@ -35,11 +35,11 @@ header, footer, footer a {
 }
 
 header img {
-    width: 200;
+    width: 100px;
     height: auto;
     float: right;
 }
 
 footer {
-    font-size: 10pt;
+    font-size: 8pt;
 }
