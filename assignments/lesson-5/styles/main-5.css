@@ -19,6 +19,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header h1 {
+    display: flex;
     align-content: right;
     margin-left: 25%;
     
