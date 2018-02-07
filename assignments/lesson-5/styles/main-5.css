@@ -19,7 +19,15 @@ header .subheading {}
 nav {}
 nav button {}
 nav ul {}
-nav ul li {}
+
+nav ul li {
+    
+    Display: inline;
+    
+    list-style-type: none;
+    
+}
+
 nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
