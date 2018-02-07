@@ -14,7 +14,7 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    width: 900px;
+   max-width: 900px;
     
 }
 
@@ -33,6 +33,7 @@ header .subheading {
     
     align-content: right;
     margin-left: 25%;
+    height: 20px;
 }
 
 nav {}
