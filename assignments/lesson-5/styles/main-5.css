@@ -23,6 +23,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     
     display: flex;
     flex-direction: column;
+    align-items: flex-end
 }
 
 header h1 {}
