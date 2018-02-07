@@ -18,18 +18,19 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 
 header h1 {
     align-content: right;
-    width: 75%;
+    margin-left: 25%;
     
 }
 
 header img {
     float: left;
     width: 25%;
+    overflow: auto;
 }
 header .subheading {
     
     align-content: right;
-    width: 75%
+    margin-left: 25%;
 }
 
 nav {}
