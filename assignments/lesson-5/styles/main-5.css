@@ -16,7 +16,6 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {
-    display: flex;
     display: inline;    
 }
 
