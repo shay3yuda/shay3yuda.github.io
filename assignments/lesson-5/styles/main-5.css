@@ -37,7 +37,10 @@ header .subheading {
     height: 20px;
 }
 
-nav {}
+nav {
+    
+    clear: left;
+}
 nav button {}
 nav ul {}
 
