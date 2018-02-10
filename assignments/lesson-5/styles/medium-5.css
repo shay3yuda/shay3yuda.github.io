@@ -1,6 +1,10 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-    
+  
+    header {
+        
+        
+    }    
   header img {
     
     width: 30%;
@@ -43,29 +47,31 @@ header .subheading {
  }
     
   article p.town-article   { 
-      float: left;
       margin: 20px;
-      padding-right: 200px;
       height: auto;
+      text-align: left;
+      max-width: 50%;
+      align-self: flex-end;
     
     }
     
  article {
-     float: right;
-     padding: 0 20px 20px 0;
-     width: 30%;
-    }
-    
-    .tornado{
-        float: right;
-        width: ;
-    }
-    .short{
-        float: left;
-        width: 50%;
+     margin: 20px;
+     
+     display: flex;
     }
 
-    
+    .article-layout {
+        
+        display: flex;
+        flex-flow: row;
+        align-self: flex-end;
+        
+    }
+    article img {
+        
+        max-width: 45%;
+    }
   
 
     
