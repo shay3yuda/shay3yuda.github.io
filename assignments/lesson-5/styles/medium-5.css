@@ -1,10 +1,75 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+  header img {
+    
+    width: 30%;
+    }
   
-  nav button { display:none; }  /* hamburger button does not need to be shown */
+header h1 {
+   
+    font-size: 3em;
+    letter-spacing: .1em;
+    
+   
+}
+
+header .subheading {
+ 
+     font-size: 1.5em;
+    margin-right: 10px;
+    
+
+    
+}    
+  nav button { display: none; }  /* hamburger button does not need to be shown */
+    
+  body  nav ul {
+        
+        display: inherit;
+      
+      
+    }
+    
+  section.forecast { 
+      
+      display: inherit;
+      height: 150px;
+      
+    }  /* show the 10-day forecast with the medium view and up */
+ section.forecast table {  
+    height: 75%;
+     margin-bottom: 10px;
+ }
+    
+  article p.town-article   { 
+      float: left;
+      margin: 20px;
+      padding-right: 200px;
+      height: auto;
+    
+    }
+    
+ article {
+     float: right;
+     padding: 0 20px 20px 0;
+     width: 30%;
+    }
+    
+    .tornado{
+        float: right;
+        width: ;
+    }
+    .short{
+        float: left;
+        width: 50%;
+    }
+
+    
   
-  section.forecast { display: ???; }  /* show the 10-day forecast with the medium view and up */
-  
-  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+    
+   
+/* responsive images */
 
 }

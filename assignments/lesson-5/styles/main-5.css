@@ -4,69 +4,199 @@
 
 body {
     font-size: 16px;
+    font-family: "Calibri Light", Calibri, sans-serif;
+    color: #632d00;
     
-    font-family: "Calibri Light" Calibri sans-serif;
+    width: 100%;
     
-    width: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
   /* Declare the base font-family - from google font api or other */
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-   max-width: 900px;
     
 }
 
-header h1 {
-    display: flex;
-    align-content: right;
-    margin-left: 25%;
+h1, h2, h3, h4, h5, h6 {
+    
+    color: #1c9db2;
+    
+    font-family: "Baskerville MT Pro SemiBd", serif;
+}
+
+
+header {
+    
     
 }
 
+/* ---- Logo ---- */
 header img {
     float: left;
-    width: 25%;
-    overflow: auto;
-}
-header .subheading {
     
-    align-content: right;
-    margin-left: 25%;
-    height: 20px;
+    width: 40%;
+    overflow: auto;
+    margin-top: -20px;
+    
+}
+header h1 {
+    padding-right: 10px;
+    text-align: right;
+    font-size: 1.8em;
+    
+   
 }
 
-nav {
+header .subheading {
+ 
+     padding-right: 10px;
+    text-align: right;
+    margin-top: -20px;
     
-    clear: left;
+
+    
 }
-nav button {}
-nav ul {}
+
+nav button { 
+   /* position: fixed;
+    top: 80px;
+    right: 5px; */
+    margin: 10px;
+    float: right;
+
+}
+
+
+nav ul {
+    display: none;
+    text-align: center;
+}
+
+
+nav ul {
+    margin-top: 75px;
+}
 
 nav ul li {
     display: inline;
+    list-style: none; 
     
-    list-style-type: none; 
+    padding: 10px;
+    margin-right: px;
+    
+    background-color: #1c9db2;
+    
+    border-radius: 15px;
 }
-
-nav ul li a {}
+    
+        
+nav ul li a {
+    
+    text-decoration: none;
+    font-weight: bold;
+    
+    font size 1.2em;
+    color: white;
+}
 nav ul li.active a {}
 nav ul li a:hover {}
 
-main {}
-main h2 {}
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
-
-section {}
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+main {
+    
+    text-align: center;
+}
+main h2 {
+   font-size: 3em; 
+    
+}
+main figure { 
+    margin: 0 0 .2rem 2%; 
+    width:96%; 
 }
 
-footer {}
+main figure img { width: 100%; }
+
+section {
+    
+    
+}
+
+article {
+    
+    height: 300px;
+}
+
+.forecast {
+    
+    display: none;
+}
+
+table {
+    
+    width: 90%;
+    padding-left: 5%;
+    
+}
+td, th {
+    
+    border: 1px solid black;
+}
+
+.current img {
+    
+    vertical-align: middle;
+    max-width: 150px;
+}
+
+.current {
+    
+  font-size: 2em;
+    font-weight: bold;
+}
+
+.highlow {
+    
+    display: flex;
+    flex-flow: start;
+    justify-content: center;
+}
+
+.highlow p {
+    
+    margin: 10px;
+}
+article  img {
+    float: right;
+    overflow: auto;
+    
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 50%; 
+    /* fill the page in the small/phone view */
+  margin: 10px; 20px; 10px; 10px;
+}
+.town-article {
+    
+    padding: 5px;
+}
+
+article {
+
+}
+
+footer {
+    
+    
+    background-color: #632d00;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
