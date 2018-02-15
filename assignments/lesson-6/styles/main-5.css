@@ -1,0 +1,242 @@
+/* 
+max width 450px
+This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+ 
+
+body {
+    font-size: 16px;
+    font-family: "Calibri Light", Calibri, sans-serif;
+    color: #632d00;
+    
+    width: 100%;
+    
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    color: #1c9db2;
+    
+    font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    
+    padding-right: 30px;
+}
+
+button {
+    position: absolute;
+    left: 80%;
+    
+    
+}
+
+/* ---- Logo ---- */
+header img {
+    float: left;
+    
+    width: 40%;
+    overflow: auto;
+   
+    
+}
+header h1 {
+    padding-right: 0px;
+    text-align: right;
+    font-size: 2em;
+    
+   
+}
+
+header .subheading {
+ 
+     padding-right: 10px;
+    text-align: right;
+    margin-top: -20px;
+    font-size: 1.1em;
+    
+
+    
+}
+
+nav button { 
+   /* position: fixed;
+    top: 80px;
+    right: 5px; */
+    margin: 10px;
+    float: right;
+
+}
+
+
+nav ul {
+    clear: both;
+    display: none;
+    text-align: center;
+}
+
+
+nav ul {
+    margin-top: 75px;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none; 
+    
+    padding: 10px;
+    margin-right: px;
+    
+    background-color: #1c9db2;
+    
+    border-radius: 15px;
+}
+    
+        
+nav ul li a {
+    
+    text-decoration: none;
+    font-weight: bold;
+    
+    font size 1.2em;
+    color: white;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {
+    
+    text-align: center;
+}
+main h2 {
+   font-size: 3em; 
+    
+}
+main figure { 
+    margin: 0 0 .2rem 2%; 
+    width:96%; 
+}
+
+main figure img { width: 100%; }
+
+section {
+    
+    
+}
+
+article {
+    
+    height: 300px;
+}
+
+.forecast {
+    
+    display: none;
+}
+
+table {
+    
+    width: 90%;
+    padding-left: 5%;
+    
+}
+td, th {
+    
+    border: 1px solid black;
+}
+
+.current img {
+    
+    vertical-align: middle;
+    max-width: 150px;
+}
+
+.current {
+    
+  font-size: 2em;
+    font-weight: bold;
+}
+
+.highlow {
+    
+    display: flex;
+    flex-flow: start;
+    justify-content: center;
+}
+
+.highlow p {
+    
+    margin: 10px;
+}
+article  img {
+    float: right;
+    overflow: auto;
+    
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 50%; 
+    /* fill the page in the small/phone view */
+  margin: 10px; 20px; 10px; 10px;
+}
+
+
+
+ article p.town-article   { 
+      margin: 20px;
+      height: auto;
+     
+     font-size: 1.2em;
+    
+    }
+article img {
+    min-width: 300px;
+    max-width: 350px;
+    overflow: auto;
+}
+    
+ article {
+     margin: 20px;
+     
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     
+     overflow: hidden;
+     
+     height: auto;
+     
+    }
+footer {
+
+    clear:both;
+    
+    width: 100%;
+    background-color: #632d00;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

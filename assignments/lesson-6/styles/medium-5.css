@@ -1,0 +1,83 @@
+@media only screen and (min-width: 37.5em) {
+  /* width 450px- 768px Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+ 
+    
+    header {
+        
+        
+    }    
+  header img {
+    
+    width: 30%;
+    }
+  
+header h1 {
+   
+    font-size: 3em;
+    letter-spacing: .1em;
+    
+   
+}
+
+header .subheading {
+ 
+     font-size: 1.5em;
+    margin-right: 10px;
+    
+
+    
+}    
+  nav button { display: none; }  /* hamburger button does not need to be shown */
+    
+  body  nav ul {
+        
+        display: inherit;
+      
+      
+    }
+    
+  section.forecast { 
+      
+      display: inherit;
+      height: 150px;
+      
+    }  /* show the 10-day forecast with the medium view and up */
+ section.forecast table {  
+    height: 75%;
+     margin-bottom: 10px;
+ }
+    
+  article p.town-article   { 
+      margin: 20px;
+      height: auto;
+      text-align: left;
+      max-width: 50%;
+      align-self: flex-end;
+    
+    }
+    
+ article {
+     margin: 20px;
+     
+     display: flex;
+    }
+
+    .article-layout {
+        
+        display: flex;
+        flex-flow: row;
+        align-self: flex-end;
+        
+    }
+    article img {
+        
+        max-width: 45%;
+    }
+  
+
+    
+   
+/* responsive images */
+
+}
