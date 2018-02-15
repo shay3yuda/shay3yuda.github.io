@@ -11,20 +11,22 @@ body {
     color: #632d00;
     
     width: 100%;
+    min-width: 350px;
     
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
     
   /* Declare the base font-family - from google font api or other */
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    width: 100%;
     
 }
 
@@ -35,94 +37,114 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
 }
 
+/*====== Header ====== */
 
-.header {
-    display: flex;
-    justify-content: space-around;
-    
-    padding-right: 30px;
-}
-
-button {
-    position: absolute;
-    left: 80%;
+header {
+    max-height: 160px;
     
     
 }
+
+
 
 /* ---- Logo ---- */
-header img {
-    float: left;
+
+header figure {
     
-    width: 40%;
-    overflow: auto;
-   
+    width: 30%;
+    
+    margin-left: 0px;
+}
+
+header img {
+    width: 100%;
+    max-width: 150px;
     
 }
+
 header h1 {
-    padding-right: 0px;
-    text-align: right;
-    font-size: 2em;
     
-   
+    float: right;
+    padding-right: 2%;
+    margin-bottom: 0px;
 }
 
 header .subheading {
- 
-     padding-right: 10px;
-    text-align: right;
-    margin-top: -20px;
-    font-size: 1.1em;
     
-
-    
-}
-
-nav button { 
-   /* position: fixed;
-    top: 80px;
-    right: 5px; */
-    margin: 10px;
+    clear: right;
     float: right;
-
+    padding-right: 2%;
+    margin-top: 0px;
+    
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 
-nav ul {
-    clear: both;
-    display: none;
-    text-align: center;
+/*========== NAV ========== */
+nav button {
+    
+    background-color: transparent;
+    color: white;
+    margin-left: 4%;
+    border: none;
+    font-size: 2rem;
+    
+    
+    
+    
 }
 
+nav {
+    
+    background-color: #1c9db2;
+    margin: 0px;
+    padding: 0px;
+}
 
 nav ul {
-    margin-top: 75px;
+    
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
 nav ul li {
-    display: inline;
-    list-style: none; 
     
-    padding: 10px;
-    margin-right: px;
-    
-    background-color: #1c9db2;
-    
-    border-radius: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
-    
-        
+
 nav ul li a {
     
+    display: block;
     text-decoration: none;
-    font-weight: bold;
     
-    font size 1.2em;
-    color: white;
+    color: #fff;
+    border-top: 1px solid rgba(255,255,225,0.3);
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .1em;
 }
-nav ul li.active a {}
-nav ul li a:hover {}
 
+nav ul li a:hover {
+    
+    background-color: rgba(0,0,0,0.15);
+}
+
+nav ul li.active a {
+    
+    background-color: rgba(0,0,0,0.3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+
+/*============MAIN=========== */
 main {
     
     text-align: center;
@@ -132,8 +154,8 @@ main h2 {
     
 }
 main figure { 
-    margin: 0 0 .2rem 2%; 
-    width:96%; 
+    margin: auto; 
+    width:100%; 
 }
 
 main figure img { width: 100%; }
@@ -187,15 +209,22 @@ td, th {
     
     margin: 10px;
 }
+
+/*--------- ARTICLE --------*/
+/
+
 article  img {
     float: right;
     overflow: auto;
     
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */ 
   width: 50%; 
-    /* fill the page in the small/phone view */
+    
+
+
   margin: 10px; 20px; 10px; 10px;
 }
+
 
 
 
@@ -224,6 +253,7 @@ article img {
      height: auto;
      
     }
+
 footer {
 
     clear:both;
@@ -240,3 +270,10 @@ footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+
+ /* -----clear fix------- */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

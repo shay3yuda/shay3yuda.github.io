@@ -7,7 +7,7 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Date Test</title>
+    <title>Button Test</title>
     
     <meta name="author" content="Your Name Here">
     
@@ -230,10 +230,12 @@ function monthName() {
     
     return month;
 	}
+	
+	function toggleNavMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
 </script>
 
-<button onclick="currentDate()">Click me</button>
-<div id="currentdate"></div>
 
 </body>
 </html>
