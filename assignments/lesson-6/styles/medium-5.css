@@ -108,7 +108,10 @@ header .subheading {
   margin: 10px; 20px; 10px; 10px;
 }
 
-
+.forecast {
+    
+    display: inherit;
+}
 
  
 article img {
