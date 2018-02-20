@@ -53,18 +53,18 @@ header h1 {
         
         font-size: 1.2rem;
     }
+    
+    section.forecast {
+    
+    display: inherit;
+}
       
     
    /* ------from main nav end----- */
       
     }  /* show the 10-day forecast with the medium view and up */
-section.forecast {
-    
-    display: inherit;
-}
 
 
     
 
 
-}
