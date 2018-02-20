@@ -228,7 +228,7 @@ td, th {
 .highlow {
     
     display: flex;
-    flex-flow: start;
+    
     justify-content: center;
 }
 
@@ -267,7 +267,6 @@ article img {
     
      
     width: 90%;
-    max-width 400px;
     align-self: center;
 }
 

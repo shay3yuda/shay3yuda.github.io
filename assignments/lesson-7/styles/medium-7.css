@@ -64,8 +64,8 @@ section.forecast {
 }
 
  section. forecast table {  
-    height: 75%;
-     margin-bottom: 10px;
+    
+    
  }
     
 /*-------- ARTICLE ---------*/ 
@@ -73,10 +73,10 @@ section.forecast {
 
     
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 50%; 
+   
     /* fill the page in the small/phone view */
-  margin: 10px; 20px; 10px; 10px;
-}
+  
+
 
  
 
