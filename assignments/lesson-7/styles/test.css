@@ -1,0 +1,51 @@
+header {
+    
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    
+    
+}
+
+#title {
+    align-self: flex-end;
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0px;
+    border: 2px dashed green;  
+    
+}
+
+header figure {
+    
+    
+    margin: 0px; 
+}
+
+header img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0px;
+  
+      border: 2px dashed green;  
+}
+
+header h1 {
+    
+    margin: 0px;
+}
+
+header p {
+    
+    margin: 0px;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
