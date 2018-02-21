@@ -301,3 +301,44 @@ footer>p {} /* This structure refers to p elements that are direct children of t
   display: table;
   clear: both;
 }
+
+/*============GALLERY================*/
+
+
+main#gallery {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    
+    padding: 20px;
+}
+
+main#gallery img {
+    
+    border-radius: 10px;
+    
+}
+
+    a.shadowbox:link {
+    
+    text-decoration: none;
+    font-size: .8em;
+        color: #632d00;
+    
+}
+
+a.shadowbox:hover {
+    
+    box-shadow: 3px 3px 3px grey;
+    background-color: #1c9db2;
+    border-radius: 10px;
+    color: white;
+    padding: 2%;
+}
+
+#gallery figcaption {
+    
+    padding: 2%;
+}
+

@@ -60,6 +60,15 @@ header h1 {
 }
       
     
-   /* ------from main nav end----- */
+   /*============GALLERY================*/
+
+#gallery {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr!important;
+    grid-gap: 20px;
+    
+    padding: 20px;
+}
       
-    }  /* show the 10-day forecast with the medium view and up */
+}  /* show the 10-day forecast with the medium view and up */
