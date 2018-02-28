@@ -21,11 +21,11 @@
     
     <link href="styles/normalize.css"><!-- normalize useragent/browser defaults -->
     
-    <link href="style/main-8.css" rel="stylesheet"><!-- default styles - small/phone views -->
+    <link href="style/main_stormcenter-8.css" rel="stylesheet"><!-- default styles - small/phone views -->
     
-    <link href="style/medium-8.css" rel="stylesheet"><!-- medium/tablet views -->
+    <link href="style/medium-stromcenter-8.css" rel="stylesheet"><!-- medium/tablet views -->
     
-    <link href="style/large-8.css" rel="stylesheet"><!-- large/wide/desktop views --> 
+    <link href="style/large-stormcenter-8.css" rel="stylesheet"><!-- large/wide/desktop views --> 
 
 </head>
     
@@ -68,83 +68,99 @@
   </nav>
     
     <main>
-        <form>
-        <fieldset>
-            <legend>Report A Storm</legend>
+            
+        <form action="thanks.html" method="get">
+            
+            <fieldset id="main">
+                <legend><h1>Report A Storm</h1></legend>
+                
+                <fieldset>
+                    <legend>Contact Information</legend>
 
-            <label>
-                <span>Name: </span>
-                <input name="name" type="text" pattern="[A-Za-z]{5}"  > 
-            </label>
+                    <label for="name">
+                        <span>Name</span>
+                        <input name="name" type="text" id="name" pattern="[A-Za-z]{5}"  > 
+                    </label>
 
-            <label>
-                <span>E-mail: </span>
-                <input type="email" name="email" placeholder="contact@byui.edu">
-            </label>
-            
-            <label>
-                <span>Phone: </span>
-                <input type="tele" name="phone" required >
-            </label>
-            
-            <label>
-                <span>Zip Code: </span>
-                <input type="number" name="zip" required >
-            </label>
-            
-            <label>
-                <span>Date: </span>
-                <input type="date" name="date" >
-            </label>
-            
-            <label>
-                <span>Storm Type: </span>
-                <input type="text" list="weatherStorms" name="storm">
-                <datalist id="weatherStorms">
-                    <options>Flash Flood</options>
-                    <option>Flooding</option>
-                    <option>Hail</option>
-                    <option>Hurricane</option>
-                    <option>Thunderstorm</option>
-                    <option>Tornado</option>
-                    <option>Blizzard</option>
-                    <option>High Winds</option>
-                </datalist>
-            </label>
-            
-            <label>
-                <span>Storm Severity</span>
-                <input type="number"  name="severity" min="1" max="10" placeholder="1-10" size="10">
-                <span>10 being Most sever</span>
-            </label>
-            
-            <label>
-                <span>Storm Region</span>
-                <input type="select" name="region">
-                <select id="region">
-                      <option value="select" disabled>Select Region</option>
-                      <option value="Franklin">Franklin</option>
-                      <option value="Greenville">Greenville</option>
-                      <option value="springfield">Springfield</option>
-                </select>
-            </label>
-            
-            <fieldset>
-                
-                <legend>User In-Danger Level</legend>
-                
-                <input  type="radio"  name="yes" id="yes" >
-                <label for="yes">yes</label>
-                
-                <input type="radio"  name="no" id="no" ><label for="no">No</label>
-                
-                <input type="radio" name="maybe" id="maybe" ><label for="maybe">Maybe</label>
+                    <label>
+                        <span>E-mail</span>    
+                        <input type="email" name="email" placeholder="contact@byui.edu">
+                    </label>
+
+                    <label>
+                        <span>Phone</span>
+                        <input type="tele" name="phone" required >
+                    </label>
+
+                    <label>
+                        <span>Zip Code</span>
+                        <input type="number" name="zip" required >
+                    </label>
+
+                </fieldset>    
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+
+                    <label>
+                        <span>Date</span>
+                        <input type="date" name="date" >
+                    </label>
+
+                    <label>
+                        <span>Storm Type</span>
+                        <input type="text" list="weatherStorms" name="storm" id="weatherType">
+                        <datalist id="weatherStorms">
+                            <options>Flash Flood</options>
+                            <option>Flooding</option>
+                            <option>Hail</option>
+                            <option>Hurricane</option>
+                            <option>Thunderstorm</option>
+                            <option>Tornado</option>
+                            <option>Blizzard</option>
+                            <option>High Winds</option>
+                        </datalist>
+                    </label>
+
+                    <label>
+                        <span>Storm Severity</span>
+                        <input type="number" id="severity" name="severity" min="1" max="10" placeholder="1-10" size="10">
+                        <span class="explain">10 being Most sever</span>
+                    </label>
+
+                    <label>
+                        <span>Storm Regain</span>
+                        <!-- <input type="select" name="region" id="region"> -->
+                        <select id="region">
+                              <option value="select" disabled>Select Region</option>
+                              <option value="Franklin">Franklin</option>
+                              <option value="Greenville">Greenville</option>
+                              <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+
+                    <fieldset id="danger">
+                        <legend id="danger_title">User In-Danger Level</legend>
+
+                        <input  type="radio"  name="yes" id="yes">
+                        <label for="yes">yes</label>
+
+                        <input type="radio"  name="no" id="no" ><label for="no">No</label>
+
+                        <input type="radio" name="maybe" id="maybe" ><label for="maybe">Maybe</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Comments</legend>
+
+                        <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+
+                </fieldset>
+
+                <input type="submit" value="Submit" id="button">
                 
             </fieldset>
-            <label>Additional Comments</label>
-            <textarea name="comment" rows="5" cols="50"></textarea>
-            
-        </fieldset>
         
         </form>
     	
