@@ -21,7 +21,16 @@
   width: 45%;
 } 
         
-   
+#thank_page p a{
+    
+    padding: 3%;
+}
+    
+#thank_page {
+    
+    margin-top: 10%;
+    
+}
     
     
     
