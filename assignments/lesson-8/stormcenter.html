@@ -78,8 +78,8 @@
                     <legend>Contact Information</legend>
 
                     <label for="name">
-                        <span>Name</span>
-                        <input name="name" type="text" id="name" pattern="[A-Za-z]{5}"  > 
+                        <span>Full Name</span>
+                        <input name="name" type="text" id="name" pattern="[A-Za-z]{5}" placeholder="First Last"  > 
                     </label>
 
                     <label>
@@ -111,7 +111,6 @@
                         <span>Storm Type</span>
                         <input type="text" list="weatherStorms" name="storm" id="weatherType">
                         <datalist id="weatherStorms">
-                            <options>Flash Flood</options>
                             <option>Flooding</option>
                             <option>Hail</option>
                             <option>Hurricane</option>
@@ -129,13 +128,13 @@
                     </label>
 
                     <label>
-                        <span>Storm Regain</span>
+                        <span>Storm Region</span>
                         <!-- <input type="select" name="region" id="region"> -->
-                        <select id="region">
-                              <option value="select" disabled>Select Region</option>
-                              <option value="Franklin">Franklin</option>
-                              <option value="Greenville">Greenville</option>
-                              <option value="springfield">Springfield</option>
+                        <select id="region" name="region">
+                            <option value="select" disabled>--Select Region--</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
                         </select>
                     </label>
 
