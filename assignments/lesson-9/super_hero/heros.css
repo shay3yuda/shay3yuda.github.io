@@ -32,6 +32,11 @@ color: orangered;
 
 }
 
+h2 {
+    
+    color: deepskyblue;
+}
+
 
 
 /* header styles */
@@ -79,7 +84,7 @@ section article {
 section p {
 
   margin: 5px 0;
-    color: deepskyblue;
+    color: orangered;
 
 }
 
