@@ -1,4 +1,4 @@
-/*var hTemp = document.querySelector("#highTemp");
+var hTemp = document.querySelector("#highTemp");
 var lTemp = document.querySelector("#lowTemp");
 var currentTemp = document.querySelector ("#currentTemp");
 var written = document.querySelector("#writtenWeather");
