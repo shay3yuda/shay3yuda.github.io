@@ -1,0 +1,40 @@
+@media only screen and (min-width: 64em) {
+  /* 
+    mid width is 768
+    Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    
+    
+  article p.town-article img { 
+      max-width: 29.333%; 
+    }
+    
+   
+   /*============GALLERY================*/
+
+#gallery {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr!important;
+    grid-gap: 20px;
+    
+    padding: 20px;
+} 
+        
+   /*========= Home Page Layout==========*/
+    
+    #homePage {
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    
+    .footer {
+        
+    
+    }
+
+  
+}
