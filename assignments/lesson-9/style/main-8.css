@@ -353,26 +353,27 @@ a.shadowbox:hover {
      display: flex;
      flex-flow: wrap;
      justify-content: space-around;
+     
     
 }
 
-#wu-weather h1,  #wu-weather h2,  #wu-weather p {
+#towninfo h1,  #towninfo h2,  #towninfo p {
     
     text-align: center;
 }
-#wu-weather h3 {
+#towninfo h3 {
     
     color: #632d00;
 }
 
-#wu-weather h4 {
+#towninfo h4 {
     
     text-align: left;
     padding-left: 5%;
     margin-bottom: 2%;
 }
 
-#wu-weather ul {
+#towninfo ul {
     
     text-align: left;
     margin-top: 0%;
