@@ -1,0 +1,342 @@
+/* 
+max width 450px
+This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+ 
+
+body {
+    font-size: 16px;
+    font-family: "Calibri Light", Calibri, sans-serif;
+    color: #632d00;
+    
+    margin: 0%;
+    
+    /*width: 100%;
+    min-width: 350px;
+    
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+
+    
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    
+    
+}
+
+header h1 {
+    
+    color: #1c9db2;
+    
+    font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
+}
+
+/*====== Header ====== */
+
+header {
+    
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+   
+}
+
+
+
+/* ---- Logo ---- */
+
+header figure {
+    
+    width: 30%;
+    margin: 0px;
+    
+}
+
+header img {
+    width: 100%;
+    max-width: 150px;
+    
+}
+
+#title {
+    Width: 70%;
+    text-align: right;
+    
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+    
+
+}
+header h1 {
+   
+    margin: 0px;
+    padding-right: 2%;
+    
+}
+
+header p {
+    
+    padding-right: 2%;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/*========== NAV ========== */
+nav button {
+    align-self: flex-end;
+    
+    background-color: transparent;
+    
+    color: white;
+    
+    margin-right: 4%;
+    border: none;
+    font-size: 2rem;
+    
+    background-color: #1c9db2;  
+}
+
+.navBar {
+    
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+     
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: column;
+    
+    align-self: flex-end;
+    
+    list-style: none;
+
+    margin-right: 4%;
+    
+    width: 60%
+}
+
+nav ul li {
+    text-align: center;
+    
+    width: 100%;
+    padding: 2% 8%;
+    
+    background-color: #1c9db2;
+   
+    border-top: 1px solid rgba(255,255,225,0.3);
+}
+
+nav ul li a {
+    color: #fff;
+    
+    text-decoration: none;
+    
+    
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+nav ul li a:hover {
+    
+     text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+}
+
+nav ul li.active a {
+    
+     
+     text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*================ FORM ===============*/
+
+main {
+    
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+form h1 {
+    
+    font-size: 3rem;
+    font-family: "Calibri Light", Calibri, sans-serif;
+    color: #632d00; 
+} 
+
+
+legend {
+    
+    color: #1c9db2;
+    font-size: 1.8rem;
+    font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
+}
+
+ 
+span {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+fieldset#main {
+    
+    padding-right: 3%;
+}
+fieldset {
+    
+     border-radius: 15px;
+    margin-bottom: 1%;
+    border-color: #1c9db2;
+    background-color: rgba(99,45,0, .10);
+    padding-left: 3%;
+}
+
+input {
+    
+    color: #632d00; 
+    border:1px solid #632d00;
+    border-radius: 5px;
+    padding: .5%;
+    font-size: 1rem;
+}
+
+#danger {
+    
+    background-color: white;
+    width: 100%; 
+    margin-top: 5%;
+   
+}
+
+#danger_title {
+    
+    font-size: 1.25em;
+    font-family:  "Calibri Light", Calibri, sans-serif;
+    color: #632d00;
+   font-weight: bold;
+}
+
+.explain {
+    
+    font-size: .7rem;
+    color: rgba(99,45,0, .5);
+    margin-top: 1px;
+}
+
+#comment {
+    
+    width: 100%;
+}
+
+#button {
+    
+    font-size: 1.5rem;
+    width: 50%;
+    color: white;
+    background-color: #1c9db2; 
+    border-radius: 15px;
+    height: 50px;
+    border-color: transparent;
+}
+#button:hover {
+    
+    box-shadow: 5px 5px 15px gray;
+}
+
+#button:active {
+    
+    box-shadow: none;
+}
+
+/*====== Thank You Page ====*/
+
+#thank_page {
+    
+    text-align: center;
+    margin-top: 20%;
+    
+}
+
+#thank_page h1 {
+    
+    font-size: 3rem;;
+    font-family: Courgette, "Baskerville MT Pro SemiBd", serif; 
+    color: #1c9db2;
+    
+}
+
+#thank_page p {
+    
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+#thank_page p a{
+    
+    font-family:  "Calibri Light", Calibri, sans-serif;
+    color: white;
+   font-weight: bold;
+    background-color: #632d00;
+    padding: 6%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+#thank_page p a:hover {
+    
+    box-shadow: 5px 5px 15px gray;
+}
+
+#thank_page p a:active{
+    
+    box-shadow: none;
+}
+/*======== FOOTER =======*/
+
+footer {
+    width: 100%;
+    background-color: #632d00;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+ /* -----clear fix------- */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
