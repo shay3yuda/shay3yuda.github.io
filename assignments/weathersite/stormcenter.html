@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en-us">
+    
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Storm Center | Weather Story </title>
+    
+    <meta name="author" content="Shay Yuda">
+    
+    <meta name="description" content="form for reporting a storm.">
+    
+<!-- external style references in the proper cascading order -->
+   <!-- Google API font reference--> 
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    
+    
+    <link href="style/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+    
+    <link href="style/main_stormcenter.css" rel="stylesheet"><!-- default styles - small/phone views -->
+    
+    <link href="style/medium-stromcenter.css" rel="stylesheet"><!-- medium/tablet views -->
+    
+    <link href="style/large-stormcenter.css" rel="stylesheet"><!-- large/wide/desktop views --> 
+
+</head>
+    
+<body>
+
+    <header class="clearfix">
+        
+        <figure class="clearfix">
+            <img src="images/logo.gif" alt="The site logo">
+        </figure>
+        
+        <div id="title">
+            <h1>Weather Story</h1>
+
+            <p>A New Story Everyday</p>
+        </div>    
+        
+      
+    </header>
+
+<!-- site navigation use placeholder references -->
+    <nav>
+      
+        <button onclick="toggleNavMenu()">&#9776;</button>
+
+        <ul id="navList" class="hide">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="franklin.html">Franklin</a></li>
+
+            <li><a href="greenille.html">Greenville</a></li>
+
+            <li><a href="springfield.html">Springfield</a></li>
+
+            <li class="active"><a href="stormcenter.html">StormCenter</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      
+  </nav>
+    
+    <main>
+            
+        <form action="thanks.html" method="get">
+            
+            <fieldset id="main">
+                <legend><h1>Report A Storm</h1></legend>
+                
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="name">
+                        <span>Full Name</span>
+                        <input name="name" type="text" id="name" placeholder="First Last" pattern="[A-Za-z]{5}"> 
+                    </label>
+
+                    <label>
+                        <span>E-mail</span>    
+                        <input type="email" name="email" placeholder="contact@byui.edu">
+                    </label>
+
+                    <label>
+                        <span>Phone</span>
+                        <input type="tel" name="phone" required >
+                    </label>
+
+                    <label>
+                        <span>Zip Code</span>
+                        <input type="number" name="zip" required >
+                    </label>
+
+                </fieldset>    
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+
+                    <label>
+                        <span>Date</span>
+                        <input type="date" name="date" >
+                    </label>
+
+                    <label>
+                        <span>Storm Type</span>
+                        <input type="text" list="weatherStorms" name="storm" id="weatherType">
+                        <datalist id="weatherStorms">
+                            <option>Flooding</option>
+                            <option>Hail</option>
+                            <option>Hurricane</option>
+                            <option>Thunderstorm</option>
+                            <option>Tornado</option>
+                            <option>Blizzard</option>
+                            <option>High Winds</option>
+                        </datalist>
+                    </label>
+
+                    <label>
+                        <span>Storm Severity</span>
+                        <input type="number" id="severity" name="severity" min="1" max="10" placeholder="1-10" size="10">
+                        <span class="explain">10 being Most sever</span>
+                    </label>
+
+                    <label>
+                        <span>Storm Region</span>
+                        <!-- <input type="select" name="region" id="region"> -->
+                        <select id="region" name="region">
+                            <option value="select" disabled selected>--Select Region--</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+                    </label>
+
+                    <fieldset id="danger">
+                        <legend id="danger_title">User In-Danger Level</legend>
+
+                        <input  type="radio"  name="yes" id="yes">
+                        <label for="yes">yes</label>
+
+                        <input type="radio"  name="no" id="no" ><label for="no">No</label>
+
+                        <input type="radio" name="maybe" id="maybe" ><label for="maybe">Maybe</label>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Comments</legend>
+
+                        <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+
+                </fieldset>
+
+                <input type="submit" value="Submit" id="button">
+                
+            </fieldset>
+        
+        </form>
+    	
+    </main>
+    
+  <footer>
+      
+      <aside>
+          <address>
+        Contact information placeholder
+          </address>
+      </aside>
+      
+      <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+      
+  </footer>
+
+  <script src="scripts/all-pages/currentdate.js"></script>
+    
+  <script src="scripts/all-pages/hamburger.js"></script>
+    
+
+</body>
+</html>

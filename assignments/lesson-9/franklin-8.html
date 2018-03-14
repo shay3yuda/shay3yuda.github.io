@@ -19,13 +19,13 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
     
     
-    <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+    <link href="style/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
     
-    <link href="styles/main-8.css" rel="stylesheet"><!-- default styles - small/phone views -->
+    <link href="style/main-8.css" rel="stylesheet"><!-- default styles - small/phone views -->
     
-    <link href="styles/medium-8.css" rel="stylesheet"><!-- medium/tablet views -->
+    <link href="style/medium-8.css" rel="stylesheet"><!-- medium/tablet views -->
     
-    <link href="styles/large-8.css" rel="stylesheet"><!-- large/wide/desktop views --> 
+    <link href="style/large-8.css" rel="stylesheet"><!-- large/wide/desktop views --> 
 
 </head>
     
@@ -52,7 +52,7 @@
         <button onclick="toggleNavMenu()">&#9776;</button>
 
         <ul id="navList" class="hide" class="clearfix">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
 
             <li class="active"><a href="franklin-8.html">Franklin</a></li>
 
@@ -60,7 +60,7 @@
 
             <li><a href="#">Springfield</a></li>
 
-            <li><a href="stormcenter.html">StormCenter</a></li>
+            <li><a href="/stormcenter.html">StormCenter</a></li>
 
             <li><a href="gallery-8.html">Gallery</a></li>
         </ul>
@@ -83,24 +83,20 @@
 
             <div class="current">
 
-                Sunny
+               <span id="currentTemp">place holder</span>
                 <picture>
-                    <img src="images/sun-400.gif" alt="A bright yellow sun" width="100px">
+                    <img id="icon" src="http://icons.wxug.com/i/c/k/clear.gif" alt="weather icon" width="100px">
                 </picture>
 
             </div>
+            <p><span id="writtenWeather"><b>place holder for current summary</b></span></p>
             
-            <div class="highlow">
-
-                <p>High: <span id="highTemp">90</span> &#8457;</p>
-                <p>Low: <span id="lowTemp">60</span> &#8457;</p>  
-
-            </div>
+        
 
             <div class="conditions">
 
-                <p>Precipitation:0%</p>  
-                <p>Wind Speed: <span id="windspeed">5</span>  mph SW</p>
+                <p>Precipitation: <span id="precipitation">0</span></p>  
+                <p>Wind Speed: <span id="windspeed">5</span>  </p>
 
             </div>
             
@@ -183,11 +179,15 @@
       
   </footer>
 
-  <script src="scripts/hamburger.js"></script>
+    <script src="scripts/hamburger.js"></script>
     
-  <script src="scripts/currentdate.js"></script>
+    <script src="scripts/currentdate.js"></script>
     
-  <script src="scripts/windchill.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+    <script src="scripts/wu-weather.js"></script>
+    
+    <script src="scripts/wu-weather-forcast.js"></script>
 
 </body>
 </html>
