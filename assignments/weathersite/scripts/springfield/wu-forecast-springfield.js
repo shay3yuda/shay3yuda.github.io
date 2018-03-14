@@ -1,6 +1,6 @@
 
 var forecastObject = new XMLHttpRequest();
-forecastObject.open("GET", 'https://api.wunderground.com/api/45c5dafb23a1ef08/forecast/q/MN/Springfield.json', true);
+forecastObject.open("GET", 'https://api.wunderground.com/api/45c5dafb23a1ef08/forecast/q/OR/Springfield.json', true);
 
 forecastObject.send();
 
