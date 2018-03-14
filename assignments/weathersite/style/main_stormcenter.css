@@ -163,9 +163,13 @@ nav ul li a:hover {
 nav ul li.active a {
     
      
+<<<<<<< HEAD
     text-shadow: 3px 2px 3px rgba(0,0,0,0.9);
     font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
     font-weight: 100;
+=======
+     text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+>>>>>>> 1fd2a1623c2b2aef504f450eaa91379dcf1d13d0
 }
 
 nav ul.hide {
