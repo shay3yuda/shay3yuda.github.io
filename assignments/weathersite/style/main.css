@@ -162,24 +162,23 @@ nav ul li a {
 
 nav ul li a:hover {
     
-<<<<<<< HEAD
+
      text-shadow: 3px 2px 3px rgba(0,0,0,0.9);
-=======
+
      text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
->>>>>>> 1fd2a1623c2b2aef504f450eaa91379dcf1d13d0
+
 }
 
 nav ul li.active a {
     
      
-<<<<<<< HEAD
      text-shadow: 3px 2px 3px rgba(0,0,0,0.9);
      font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
     font-weight: 100;
     
-=======
+
      text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
->>>>>>> 1fd2a1623c2b2aef504f450eaa91379dcf1d13d0
+
 }
 
 nav ul.hide {
@@ -211,15 +210,14 @@ main figure img { width: 100%; }
 .forecast {
     
     display: none;
-<<<<<<< HEAD
+
     padding: 20px;
 }
 
 .forecast h3 {
     
     font-size: 2em;
-=======
->>>>>>> 1fd2a1623c2b2aef504f450eaa91379dcf1d13d0
+
 }
 
 table {
@@ -293,10 +291,9 @@ article {
     
     display: flex;
     flex-flow:column;
-<<<<<<< HEAD
+
     padding-top: 20px;
-=======
->>>>>>> 1fd2a1623c2b2aef504f450eaa91379dcf1d13d0
+
 }
 
 
