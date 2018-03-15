@@ -64,6 +64,27 @@ header h1 {
          
     }
     
+    .container {
+        display: none;
+    
+        
+    }
+    .container_2 {
+        
+        display: inherit;
+        width: 70%;
+        margin: auto;
+        font-size: 1.3em;
+        padding-bottom: 3%;
+    }
+    
+    .container_2 img {
+    
+        float: right;
+        width: 45%;
+        padding-left: 2%;
+    }
+    
     
    /*============GALLERY================*/
 

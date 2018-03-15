@@ -303,6 +303,10 @@ article {
     padding: 2.5%
 }
 
+.container_2 {
+    display: none;
+    
+}
 article figure {
     
     display: flex;
