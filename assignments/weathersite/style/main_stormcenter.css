@@ -335,7 +335,10 @@ footer {
     margin-top: 10px;
 }
 footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+#currentdate {
+font-size: .9em;
+    display: inline;
+} 
 
 /* Other Class Selectors */
 
