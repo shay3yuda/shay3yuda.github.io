@@ -50,16 +50,18 @@ header {
 
 /* ---- Logo ---- */
 
-header figure {
+#logo {
     
     width: 30%;
     margin: 0px;
+    padding: 1%;
+    padding-left: 2%;
     
 }
 
 header img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     
 }
 
