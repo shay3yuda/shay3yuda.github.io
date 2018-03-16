@@ -18,6 +18,8 @@ weatherObject.onload = function() {
     
     document.getElementById("windchill").innerHTML = weatherInfo.current_observation.windchill_f + " &deg;F";
     
+    document.getElementById("windchill").innerHTML = weatherInfo.current_observation.windchill_f + " &deg;F";
+    
     document.getElementById("precipitation").innerHTML = weatherInfo.current_observation.precip_today_in + " Inches Today";
 }
 
