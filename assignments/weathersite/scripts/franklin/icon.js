@@ -9,6 +9,6 @@ weatherObject.onload = function() {
     console.log(weatherInfo);
     
     document.getElementById("icon").src = weatherInfo
-.current_observation.icon_url;
+.http://icons.wxug.com/i/c/k/partlycloudy.gif;
 }
 
