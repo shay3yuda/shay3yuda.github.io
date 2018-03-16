@@ -16,7 +16,7 @@ weatherObject.onload = function() {
     
     document.getElementById("icon").src = weatherInfo.http://icons.wxug.com/i/c/k/partlycloudy.gif;
     
-    document.getElementById("windchill").innerHTML = weatherInfo.current_observation.temp_f + " &deg;F";
+    document.getElementById("windchill").innerHTML = weatherInfo.current_observation.windchill_f + " &deg;F";
     
     document.getElementById("precipitation").innerHTML = weatherInfo.current_observation.precip_today_in + " Inches Today";
 }
