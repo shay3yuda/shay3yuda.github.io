@@ -14,7 +14,7 @@ weatherObject.onload = function() {
     
     document.getElementById("windspeed").innerHTML = weatherInfo.current_observation.wind_gust_mph + " MPH";
     
-    document.getElementById("icon").src = weatherInfo.http://icons.wxug.com/i/c/k/partlycloudy.gif;
+    document.getElementById("icon").src = weatherInfo.current_observation.icon_url;
     
     document.getElementById("windchill").innerHTML = weatherInfo.current_observation.windchill_f + " &deg;F";
     
