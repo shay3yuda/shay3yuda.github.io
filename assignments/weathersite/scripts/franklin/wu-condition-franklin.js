@@ -14,8 +14,6 @@ weatherObject.onload = function() {
     
     document.getElementById("windspeed").innerHTML = weatherInfo.current_observation.wind_gust_mph + " MPH";
     
-    document.getElementById("icon").src = weatherInfo.current_observation.image;
-    
     document.getElementById("windchill").innerHTML = weatherInfo.current_observation.windchill_f + " &deg;F";
     
     document.getElementById("precipitation").innerHTML = weatherInfo.current_observation.precip_today_in + " Inches Today";
