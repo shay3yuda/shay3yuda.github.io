@@ -178,6 +178,13 @@ nav ul.hide {
     display: none;
 }
 
+#writtenWeather {
+    
+    color: #1c9db2;
+    font-size: 1em;
+    width: 80%;
+}
+
 /*================ FORM ===============*/
 
 main {
