@@ -1,0 +1,41 @@
+@media only screen and (min-width: 64em) {
+  /* 
+    mid width is 768
+    Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    
+    
+  article p.town-article img { 
+      max-width: 29.333%; 
+    }
+    
+   
+   /*============ Form ================*/
+    main {
+        
+        width: 50%;
+    }
+    
+#danger {
+    
+  width: 45%;
+} 
+        
+#thank_page p a{
+    
+    padding: 3%;
+}
+    
+#thank_page {
+    
+    margin-top: 10%;
+    
+}
+    
+    
+    
+   
+
+  
+}
+/*end*/

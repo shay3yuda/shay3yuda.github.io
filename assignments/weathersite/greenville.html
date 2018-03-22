@@ -1,0 +1,209 @@
+<!doctype html>
+
+<html lang="en-us">
+    
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Greenville | Weather Story </title>
+    
+    <meta name="author" content="Shay Yuda">
+    
+    <meta name="description" content="Greenville, TX weather page">
+    
+<!-- external style references in the proper cascading order -->
+   <!-- Google API font reference--> 
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    
+    
+    <link href="style/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+    
+    <link href="style/main.css" rel="stylesheet"><!-- default styles - small/phone views -->
+    
+    <link href="style/medium.css" rel="stylesheet"><!-- medium/tablet views -->
+    
+    <link href="style/large.css" rel="stylesheet"><!-- large/wide/desktop views --> 
+
+</head>
+    
+<body>
+
+    <header class="clearfix">
+        
+        <figure class="clearfix">
+            <img src="images/logo.png" alt="The site logo">
+        </figure>
+        
+        <div id="title">
+            <h1>Weather Story</h1>
+
+            <p>A New Story Everyday</p>
+        </div>    
+        
+      
+    </header>
+
+<!-- site navigation use placeholder references -->
+    <nav>
+      
+        <button onclick="toggleNavMenu()">&#9776;</button>
+
+        <ul id="navList" class="hide">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="franklin.html">Franklin</a></li>
+
+            <li  class="active"><a href="greenville.html">Greenville</a></li>
+
+            <li><a href="springfield.html">Springfield</a></li>
+
+            <li><a href="stormcenter.html">StormCenter</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      
+  </nav>
+    
+    <main>
+        
+        <figure>
+            <img src="images/franklin-original.jpeg" alt="paneramic view with birght sun">
+        </figure>
+        
+        <h2>Greenfield</h2>
+        
+        <section>
+
+            <h3>Today's Weather</h3> 
+
+            <div class="current">
+
+               <span id="currentTemp">place holder</span>
+                <picture>
+                    <img id="icon" src="http://icons.wxug.com/i/c/k/clear.gif" alt="weather icon">
+                </picture>
+
+            </div>
+            <p><span id="writtenWeather"><b>place holder for current summary</b></span></p>
+            
+        
+
+            <div class="conditions">
+
+                <p>Precipitation: <span id="precipitation">0</span></p>  
+                <p>Wind Speed: <span id="windspeed">5</span>  </p>
+
+            </div>
+            
+            <div class="windchill">
+
+                <p>Wind Chill: <span id="windchill">windchill placeholder</span></p>
+
+            </div>
+
+        </section>
+
+        <section class="forecast">
+
+            <h3>10 Day Forecast</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+
+                <tbody>  
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                      </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <article>
+
+            <h2>Fog Warnings</h2>	
+
+            <div class="container"> 
+                <figure>
+                    <img class="clearfix" src="images/gallery/fog.jpg" alt="fog in covering a mountain scene">  
+                </figure>
+                    
+                <p class="short">
+                short article content placeholder
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+            </div>
+            
+             <div class="container_2">   
+                
+                    
+                <p class="short"> <img class="clearfix" src="images/tornado.jpg" alt="Large tornado and a road">  
+                short article content placeholder
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum<br><br> 
+                
+                short article content placeholder
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+            </div>
+
+            
+
+        </article>	
+        
+    </main>
+    
+  <footer>
+      
+      <aside>
+          <address>
+                Weather Story<br>
+                123 Main St.<br>
+                Franklin, MN 55333<br>
+                999-999-9999<br>
+                weather@weatherstory.com<br>
+          </address>
+      </aside>
+      
+      <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Story | <span id="currentdate">Current Date Placeholder</span></p>
+      
+  </footer>
+
+    <script src="scripts/all-pages/currentdate.js"></script>
+    
+    <script src="scripts/all-pages/hamburger.js"></script>
+    
+    
+
+    <script src="scripts/greenville/wu-condition-greenville.js"></script>
+    
+    <script src="scripts/greenville/wu-forecast-greenville.js"></script>
+    
+    <script src="scripts/greenville/icon-greenville.js"></script>
+
+</body>
+</html>

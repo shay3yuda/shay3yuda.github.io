@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en-us">
+    
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Gallery | Weather Story </title>
+    
+    <meta name="author" content="Shay Yuda">
+    
+    <meta name="description" content="image gallery of extreme weather conditions">
+
+    
+<!-- external style references in the proper cascading order -->
+   <!-- Google API font reference--> 
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    
+    
+    <link href="style/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+    
+    <link href="style/main.css" rel="stylesheet"><!-- default styles - small/phone views -->
+    
+    <link href="style/medium.css" rel="stylesheet"><!-- medium/tablet views -->
+    
+    <link href="style/large.css" rel="stylesheet"><!-- large/wide/desktop views --> 
+
+</head>
+    
+<body>
+
+    <header class="clearfix">
+        
+        <figure class="clearfix">
+            <img src="images/logo.png" alt="The site logo">
+        </figure>
+        
+        <div id="title">
+            <h1>Weather Story</h1>
+
+            <p>A New Story Everyday</p>
+        </div>    
+        
+      
+    </header>
+
+<!-- site navigation use placeholder references -->
+    <nav>
+      
+        <button onclick="toggleNavMenu()">&#9776;</button>
+
+        <ul id="navList" class="hide">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="franklin.html">Franklin</a></li>
+
+            <li><a href="greenville.html">Greenville</a></li>
+
+            <li><a href="springfield.html">Springfield</a></li>
+
+            <li><a href="stormcenter.html">StormCenter</a></li>
+
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+      
+  </nav>
+    
+    <main id="gallery">
+    	<a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/flood.jpg" alt="A flooded road with caution sign "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/fog.jpg" alt="foggy mountain scene "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/hurricane.jpg" alt="trees being blown in the winds "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure >
+            <img src="images/gallery/Lightning3.jpg" alt="lighting storm over city" />
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/snowmen.jpg" alt="hundreds of snowmen "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/rain.jpg" alt="rain storm view from by a tree "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/snowplow.jpg" alt="snow plow plowing a road "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/sunny.jpg" alt="sunny mountain scene "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+        <a class="shadowbox" href="#"><figure>
+            <img src="images/gallery/tornado%20-%20Copy.jpg" alt="large tornado next to a road "/>
+            <figcaption>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</figcaption>
+        </figure></a>
+        
+    </main>
+    
+  <footer>
+      
+      <aside>
+         <address>
+                Weather Story<br>
+                123 Main St.<br>
+                Franklin, MN 55333<br>
+                999-999-9999<br>
+                weather@weatherstory.com<br>
+          </address>
+      </aside>
+      
+      <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Story | <span id="currentdate">Current Date Placeholder</span></p>
+      
+  </footer>
+
+  <script src="scripts/all-pages/currentdate.js"></script>
+    
+  <script src="scripts/all-pages/hamburger.js"></script>
+
+</body>
+</html>
