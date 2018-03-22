@@ -29,6 +29,7 @@ weatherObject.onload = function() {
     
 }
 
+/*
 var forcastObject = new XMLHttpRequest();
 forcastObject.open('GET', '//api.wunderground.com/api/4326409d402b76d5/forecast/q/TX/Greenville.json', true);
 forcastObject.send();
@@ -41,7 +42,8 @@ forcastObject.onload = function(){
     document.getElementById('low').innerHTML = forcastInfo.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
     document.getElementById('conditions').innerHTML = forcastInfo.forecast.simpleforecast.forecastday["0"].conditions;
     */
-    
+    /*
     document.getElementById('forcast').innerHTML = forcastInfo.forecast.txt_forecast.forecastday["0"].fcttext;
     
 }
+*/
