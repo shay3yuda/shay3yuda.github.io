@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Menu</title>
+	<link rel="stylesheet" href="css/animatedMenu.css">
+    
+	<script src="js/jquery-3.3.1.min.js"></script>
+        
+    <!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    
+	<script>
+        
+	$(function(){
+		// the hover takes two functions. First to add a class when the mouse is over the li, and one to remove the class when it isn't.
+        
+        $('.navigation > li').hover(function() {
+            
+            $(this).addClass('open');
+            }, function() {
+            
+            $(this).removeClass('open');
+        });
+
+	})
+        
+	</script>
+</head>
+<body>
+    
+	<ul class="navigation">
+		<li>About Us</li>
+		<li>Services</li>
+		<li>Catalog</li>
+		<li>Blog</li>
+		<li>Contact</li>
+	</ul>
+    
+</body>
+    
+</html>
