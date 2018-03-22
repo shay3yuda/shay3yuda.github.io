@@ -7,7 +7,7 @@ weatherObject.send();
 
 weatherObject.onload = function() {
     
-   var franklinWeather = JSON.parse(request.responseText);
+   var weatherInfo = JSON.parse(request.responseText);
     console.log(weatherInfo);
     
     document.getElementById('weatherCondition').innerHTML = weatherInfo.current_observation.weather;
