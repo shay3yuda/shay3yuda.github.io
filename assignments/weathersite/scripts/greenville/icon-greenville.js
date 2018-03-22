@@ -1,14 +1,19 @@
 var weatherObject = new XMLHttpRequest();
 weatherObject.open("GET", 'https://api.wunderground.com/api/45c5dafb23a1ef08/conditions/q/TX/Greenville.json', true);
-
+    
 weatherObject.send();
 
 weatherObject.onload = function() {
-    
-    var weatherInfo = JSON.parse(weatherObject.responseText);
-    console.log(weatherInfo);
-    
-    document.getElementById("icon").src = weatherInfo
-.http://icons.wxug.com/i/c/k/partlycloudy.gif;
-}
 
+var icon_path = weatherInfo.current_observation.icon_url;
+    var urlString = document.location.href;
+    console.log(urlString);
+    var found = urlString.indexOf("https");
+    console.log(found);
+    
+    if(found>=0){
+        icon_path = icon_path.replace("http", "https");
+    }
+    
+    document.getElementById('w_icon').src = icon_path;
+}
