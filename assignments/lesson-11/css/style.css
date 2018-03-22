@@ -286,10 +286,9 @@ footer ul li {
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
-    background: lightblue;
-    box-shadow: 2px 2px 3px;
-    color: rgb(0, 167, 255);
-    
+    background: orange;
+    box-shadow: 2px 2px 3px gray;
+    color: white;
 }
 
 footer ul li:hover {
@@ -305,4 +304,5 @@ footer ul {
 footer h2 {
     
     color: white;
+    box-shadow: 2px 2px 3px gray;
 }
