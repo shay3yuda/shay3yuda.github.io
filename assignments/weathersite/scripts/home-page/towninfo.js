@@ -1,5 +1,3 @@
-/*var requestURL = 'https://api.wunderground.com/api/45c5dafb23a1ef08/forecast/q/MN/Franklin.json'; */
-
     var header = document.querySelector('header');
 
     var section = document.querySelector('section');

@@ -194,6 +194,7 @@ main {
     
     text-align: center;
 }
+
 main h2 {
    font-size: 3em; 
 
@@ -399,14 +400,16 @@ a.shadowbox:hover {
     padding-top: 2%;
     
 }
+.hide {
+    
+    display: none;
+}
 
  #towninfo {
     
      display: flex;
      flex-flow: wrap;
      justify-content: space-around;
-     
-    
 }
 
 #towninfo h1,  #towninfo h2,  #towninfo p {
