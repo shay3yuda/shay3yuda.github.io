@@ -72,11 +72,9 @@ header .subheading {
 }
 
 nav button { 
-   /* position: fixed;
-    top: 80px;
-    right: 5px; */
-    margin: 10px;
-    float: right;
+    position: fixed;
+    top: 115px;
+    right: 5px; 
 
 }
 
@@ -185,13 +183,12 @@ article  img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 50%; 
     /* fill the page in the small/phone view */
-  margin: 10px; 20px; 10px; 10px;
+    margin-left: 3%;
 }
 
 
 
  article p.town-article   { 
-      margin: 20px;
       height: auto;
      
      font-size: 1.2em;
