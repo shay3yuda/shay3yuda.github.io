@@ -20,10 +20,6 @@ body {
   /* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    
-}
 
 h1, h2, h3, h4, h5, h6 {
     
@@ -101,7 +97,7 @@ nav ul li {
     list-style: none; 
     
     padding: 10px;
-    margin-right: px;
+    
     
     background-color: #1c9db2;
     
@@ -113,8 +109,7 @@ nav ul li a {
     
     text-decoration: none;
     font-weight: bold;
-    
-    font size 1.2em;
+
     color: white;
 }
 nav ul li.active a {}
@@ -176,7 +171,6 @@ td, th {
 .highlow {
     
     display: flex;
-    flex-flow: start;
     justify-content: center;
 }
 
