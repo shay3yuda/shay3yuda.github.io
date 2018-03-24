@@ -201,7 +201,6 @@ td, th {
 .highlow {
     
     display: flex;
-    flex-flow: start;
     justify-content: center;
 }
 
@@ -219,10 +218,7 @@ article  img {
     
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */ 
   width: 50%; 
-    
 
-
-  margin: 10px; 20px; 10px; 10px;
 }
 
 

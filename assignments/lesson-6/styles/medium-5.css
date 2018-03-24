@@ -84,7 +84,7 @@ header .subheading {
     
     ------from main nav end----- */
       
-    }  /* show the 10-day forecast with the medium view and up */
+    /* show the 10-day forecast with the medium view and up */
  section.forecast table {  
     height: 75%;
      margin-bottom: 10px;
@@ -157,7 +157,7 @@ article img {
   clear: both;
 }
 
-
+}
 
    
 /* responsive images */
