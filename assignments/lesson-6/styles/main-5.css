@@ -210,19 +210,6 @@ td, th {
 }
 
 /*--------- ARTICLE --------*/
-/
-
-article  img {
-    float: right;
-    overflow: auto;
-    
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */ 
-  width: 50%; 
-
-}
-
-
-
 
  article p.town-article   { 
       margin: 20px;
@@ -232,6 +219,9 @@ article  img {
     
     }
 article img {
+    float: right;
+    width: 50%; 
+
     min-width: 300px;
     max-width: 350px;
     overflow: auto;
