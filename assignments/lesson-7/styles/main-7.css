@@ -46,8 +46,6 @@ header {
     flex-flow: row;
     justify-content: space-around;
      
-      
-
     
 }
 
@@ -55,16 +53,18 @@ header {
 
 /* ---- Logo ---- */
 
-header figure {
+#logo {
     
     width: 30%;
     margin: 0px;
+    padding: 1%;
+    padding-left: 2%;
     
 }
 
 header img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     
 }
 
@@ -162,13 +162,23 @@ nav ul li a {
 
 nav ul li a:hover {
     
+
+     text-shadow: 3px 2px 3px rgba(0,0,0,0.9);
+
      text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+
 }
 
 nav ul li.active a {
     
      
+     text-shadow: 3px 2px 3px rgba(0,0,0,0.9);
+     font-family: Courgette, "Baskerville MT Pro SemiBd", serif;
+    font-weight: 100;
+    
+
      text-shadow: 2px 2px 0px rgba(0,0,0,0.4);
+
 }
 
 nav ul.hide {
@@ -182,6 +192,7 @@ main {
     
     text-align: center;
 }
+
 main h2 {
    font-size: 3em; 
 
@@ -200,17 +211,55 @@ main figure img { width: 100%; }
 .forecast {
     
     display: none;
+
+    padding: 20px;
+}
+
+.forecast h3 {
+    
+    font-size: 2em;
+
 }
 
 table {
     
     width: 90%;
     padding-left: 5%;
+    margin: auto;
     
 }
-td, th {
+
+table, th, td {
     
-    border: 1px solid black;
+    border: 1px solid #632d00;;
+    border-collapse: collapse;
+    max-width: 75%;
+}
+
+th {
+    
+    color: white;
+    background-color: #632d00;
+    border-right: 1px solid white;
+    
+    padding: .8%;
+}
+
+thead tr th:nth-child(10) {
+   
+    border-right: 1px solid #632d00;
+}
+
+th .border{
+    
+    border-right: 1px solid #632d00;
+}
+
+td {
+    
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
 }
 
 .current img {
@@ -243,13 +292,11 @@ article {
     
     display: flex;
     flex-flow:column;
+
+    padding-top: 20px;
+
 }
 
-article h3 {
-    
-    margin-bottom: 0%;
-    margin-top: 20px;
-}
 
 .container {
     display: flex;
@@ -257,6 +304,10 @@ article h3 {
     padding: 2.5%
 }
 
+.container_2 {
+    display: none;
+    
+}
 article figure {
     
     display: flex;
@@ -314,21 +365,19 @@ main#gallery {
     padding: 20px;
 }
 
-main#gallery img {
+main#gallery figure {
     
     border-radius: 10px;
+	background-color: #1c9db2;
+    border-radius: 10px;
+    color: white;
+    padding: 2%;
     
 }
 
-    a.shadowbox:link {
-    
-    text-decoration: none;
-    font-size: .8em;
-        color: #632d00;
-    
-}
 
-a.shadowbox:hover {
+
+.shadowbox:hover {
     
     box-shadow: 3px 3px 3px grey;
     background-color: #1c9db2;
@@ -342,3 +391,50 @@ a.shadowbox:hover {
     padding: 2%;
 }
 
+/*===== Home Page Layout ======== */
+#homeMain {
+    padding-top: 2%;
+    
+}
+
+.hide {
+    
+    display: none;
+}
+
+ #towninfo {
+    
+     display: flex;
+     flex-flow: wrap;
+     justify-content: space-around;
+}
+
+#towninfo h1,  #towninfo h2,  #towninfo p {
+    
+    text-align: center;
+}
+#towninfo h3 {
+    
+    color: #632d00;
+}
+
+#towninfo h4 {
+    
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+#towninfo ul {
+    
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom: 10%;
+}
+
+.footer {
+   
+   width: 100%;
+}
+
+/*end*/

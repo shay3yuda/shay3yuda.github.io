@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en-us">
+    
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>The Mountain Spoke</title>
+
+    <meta name="author" content="Shay Yuda">
+    
+    <meta name="description" content="Home Page">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
+    
+    
+    <link href="styles/normalize.css" rel="stylesheet"><!-- normalize useragent/browser defaults -->
+    
+    <link href="styles/main.css" rel="stylesheet"><!-- default styles - small/phone views -->
+    
+    <link href="styles/medium.css" rel="stylesheet"><!-- medium/tablet views -->
+    
+    <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views --> 
+    
+    
+   <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+        
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+    $("#nav_button").click(function(){
+        $("#nav_section").slideToggle(500);
+    });
+});
+    </script> 
+
+</head>
+    
+<body>
+
+    <header>
+        
+		<div id="title_n_logo">
+			
+        	<div class="logo">
+            	<img src="images/logo.png" alt="logo">
+        	</div>
+			
+			<div>	
+				<h1>The<br>Mountain<br>Spoke</h1>
+			</div>
+			
+        </div>
+		
+            <button id="nav_button">&#9776;</button>
+        
+        
+    </header>
+
+
+    <nav>
+
+<div id="nav_section">
+            <ul id="navList" class="hide">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="tours.html">Adventure Tours</a></li>
+
+                <li><a href="event.html">Events</a></li>
+
+                <li><a href="sales.html">Shop</a></li>
+
+                <li><a href="service.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div id="header_img">
+            <img src="images/bike_header_small.jpg" alt="logo">
+        </div> 
+      
+  </nav>
+    
+    <main>
+		
+		<button id="register_btn">Register </button>
+       
+      
+           
+        
+    </main>
+    
+  <footer>
+      
+      <aside>
+          <address>
+               The Mountain Spoke<br>
+                3950 Valley Commons Drive<br>
+                Bozeman, MT 55333<br>
+                999-999-9999<br>
+                weather@weatherstory.com<br>
+          </address>
+      </aside>
+      
+      <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke</p>
+      
+  </footer>
+
+</body>
+<script href="scripts/menu_toggle.js"></script>    
+    
+</html>

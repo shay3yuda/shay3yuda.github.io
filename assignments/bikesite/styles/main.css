@@ -1,0 +1,193 @@
+/* COLORS
+    Dark Navy    #617087 / rgba(97, 112, 135, .5);		     
+    Navy         #6B9DB2
+
+    Lime Green   #C4CB23
+
+    Gray         #9C9DA2 / rgba(156, 157, 162, .5);
+
+	Ling Gray #d7d8da;
+
+*/
+
+body {
+    
+    background-color: #d7d8da;
+}
+
+h1 {
+    
+    color: #C4CB23;
+    font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
+}
+
+h2, h3, h4, h5, h6 {
+    
+    color: #6B9DB2; 
+    font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
+}
+
+p {
+    
+    color: #9C9DA2;
+    font-family: "Quicksand", Calibri, sans-serif;
+}
+
+/* =======Header======== */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+	background-color: #617087;
+}
+
+.logo {
+    
+    max-width: 65px;
+}
+
+.logo img {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    padding: 10% 0%;
+   
+}
+
+header h1 {
+	
+	font-size: 0.8em;
+	margin-left: 1%; 
+}
+
+#title_n_logo {
+	
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	width: 140px;
+}
+
+
+#nav_button {
+    
+    background-color:transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+    width: 60px;
+    color: #C4CB23;
+}
+
+/* ======== NAV ========== */ 
+
+#nav_section {
+    
+    position: absolute;
+    z-index: 3;  
+    background-color: rgba(97, 112, 135, .6);
+    padding-right: 5%;
+    
+	margin-bottom: 0%;
+}
+
+
+#nav_section ul li {
+    
+    list-style: none;
+    font-family: "Quicksand", Calibri, sans-serif;
+    font-size: 1.5em;
+    padding: 1%;
+	margin: 3%;
+    width: 100%;
+}
+
+
+#nav_section ul li a:link {
+    
+    text-decoration: none;
+    color: #C4CB23;
+    
+}
+
+#nav_section ul li a:visited {
+    
+    text-decoration: none;
+    color: #C4CB23;
+    
+}
+
+#nav_section ul li a:hover {
+    
+    text-decoration: none;
+    color: #C4CB23;
+    background-color: rgba(97, 112, 135, .9);
+    border-top: 1px solid #C4CB23;
+    border-bottom: 1px solid #C4CB23;
+    
+}
+
+
+#nav_section ul li a:active {
+	
+	 text-decoration: none;
+    color: #C4CB23;
+    background-color: rgba(97, 112, 135, .9);
+    border-top: 1px solid #C4CB23;
+    border-bottom: 1px solid #C4CB23;
+}
+/* ========== MAIN ============ */
+
+main {
+	width: 80%;
+	margin: auto;
+	margin-top: 5%;
+	background-color: #d7d8da;
+	
+
+}
+#header_img {
+    
+    width: 100%;
+}
+
+#header_img img{
+    
+    width: 100%;
+    opacity: .7;
+}
+
+#register_btn {
+	
+	border:none;
+	background-color: #C4CB23;
+	color: #617087;
+	font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: .15em;
+	box-shadow: 0px 0px 10px #617087;
+	padding: 2%;
+	width: 180px;
+	margin: 3%;
+	border-radius: 3px;	
+	
+}
+
+#register_btn:hover{
+	background-color: #617087;
+	color: #C4CB23;
+	
+	
+}
+
+#register_btn:active{
+	box-shadow: none;
+	
+}
+
+footer {
+    
+    background-color: #C4CB23;
+}
