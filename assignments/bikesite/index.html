@@ -34,10 +34,12 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	
 	<script>
+		
 	$(document).ready(function(){
     $("#nav_button").click(function(){
         $("#nav_section").slideToggle(500);
     });
+	
 });
     </script> 
 
@@ -65,9 +67,9 @@
     </header>
 
 
-    <nav>
+    <nav id="drop_down_nav">
 
-<div id="nav_section">
+		<div id="nav_section">
             <ul id="navList" class="hide">
                 <li><a href="index.html">Home</a></li>
 
@@ -88,13 +90,101 @@
         </div> 
       
   </nav>
-    
-    <main>
-		
-		<button id="register_btn">Register </button>
-       
+	
+  <nav id="bar_nav">
+
+		<div id="nav_section">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="tours.html">Adventure Tours</a></li>
+
+                <li><a href="event.html">Events</a></li>
+
+                <li><a href="sales.html">Shop</a></li>
+
+                <li><a href="service.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+	  
+			<div id="header_img">
+				  <img src="images/bike_header.jpg" alt="logo">
+
+				  <section id="register_container_medium_plus">
+					  
+					  	<div>
+							<h2>Ride the longest off-pavement route in the world</h2>
+
+							<p>Register Now to Cycle the Continental Divide!</p>
+					    </div>	
+
+						<div>	
+					  		<button id="register_btn">Register </button>
+					   </div>	
+
+					</section>
+
+		  </div>
+	 
+	  
       
-           
+  </nav>	
+    
+    <main id="home">
+	
+		 <section id="register_container">
+
+					<h2>Ride the longest off-pavement route in the world</h2>
+
+					<p>Register Now to Cycle the Continental Divide!</p>
+
+					<button id="register_btn">Register </button>
+
+			</section>
+		
+			<aside>
+				<a href="sales.html"><section>
+
+					<div class="text_overlay">
+						<h1>Gear Up</h1>
+					</div>
+
+					<img src="images/shop_gear.jpg">
+
+					<p>Check out the latest mountain bikes and gear</p>
+				</section></a>
+		  
+		
+		
+				<a href="tours.html"><section>
+
+					<div class="text_overlay">
+						<h1>Find An Adventure</h1>
+					</div>
+
+					<img src="images/ad_tours.jpg">
+
+					<p>Looking for an adventure? We have the great selection of those both sides of the Mississippi.</p>
+				</section></a>
+		  
+		
+		
+				<a href="service.html"><section>
+
+					<div class="text_overlay">
+						<h1>Need A Fix?</h1>
+					</div>
+
+					<img src="images/repair.jpg">
+
+					<p>Minor to major repairs, we got your covered. View our full list of services.</p>
+				</section></a>
+		  </aside>
+		
+
         
     </main>
     
@@ -106,11 +196,17 @@
                 3950 Valley Commons Drive<br>
                 Bozeman, MT 55333<br>
                 999-999-9999<br>
-                weather@weatherstory.com<br>
+                mountainspoke@ride.com<br>
           </address>
       </aside>
+	  
+	  <div id="footer_nav">
+	  	<p><a href="references.html">Reference Page</a></p>
+			
+		<p><a href="images/Website%20Planning%20Document%20Final%20Project.pdf">Planning Document</a></p>
+	  </div>
       
-      <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke</p>
+      <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke </p>
       
   </footer>
 

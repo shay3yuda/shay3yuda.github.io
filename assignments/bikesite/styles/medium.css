@@ -1,7 +1,161 @@
 @media only screen and (min-width: 37.5em) {
  
+	#drop_down_nav {
+		
+		display: none;
+	}
+	
+	#nav_button {
+		
+		display: none;
+	}
+	
+	#bar_nav {
+		
+		display: inherit;
+	}
  
- 
- 
+/* ==== logo ==== */
+	
+.logo {
+    
+    max-width:100px;
+}
+
+.logo img {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    padding: 10% 0%;
+   
+}
+
+header h1 {
+	
+	font-size: 1.3em;
+	margin-left: 1%; 
+}
+
+#title_n_logo {
+	width: 100%;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	padding-right: 30px;
+	
+}	
+	
+/* ==== NAV BAR ====== */
+	
+	#nav_section {
+	width: 100%;
+	padding-top: 2px;
+	padding-bottom: 7px;	
+	
+}	
+	
+	#navList {
+	margin: 0px;
+	width: 100%;
+	padding: 0px;
+}
+
+
+	#nav_section ul li {
+   
+	display: inline;
+	
+	margin: 0px;
+}
+
+
+	#nav_section ul li a:link {
+    
+    text-decoration: none;
+    color: #C4CB23;
+	font-size: .8em;
+	padding-left: 4px;
+	padding-right: 4px;
+	
+	padding-top: 5px;
+	padding-bottom: 7px;
+    
+}
+
+/* ===== Main Home Page ======= */
+	#register_container {
+		
+		display: none;
+		
+	}
+	
+	
+	#register_container_medium_plus {
+	
+	width: 80%;
+	position: absolute;
+	top: 15%;
+		left: 10%;
+	display: grid;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
+	
+}
+	
+	
+	
+	#register_container_medium_plus h2 {
+		
+		color: #617087;
+		text-shadow: 1px 1px 3px #9C9DA2;
+		font-size: 1.8em;
+	}
+	
+	#register_container_medium_plus p{
+	
+		
+		color: #C4CB23;
+		font-weight: bold;
+		text-shadow: 3px 3xp 10px black;
+		margin-bottom: 10px;
+		text-shadow: 1px 1px 3px #617087;
+		font-size: 1.2em;
+	}
+	
+	
+	
+	#home {
+		
+		width: 95%;
+	}
+	
+	#home aside {
+	
+	grid-template-columns:  1fr 1fr;
+	grid-gap: 2%;
+
+}
+	
+	#home aside section {
+		
+		width: 100%; 
+	}
+	
+	
  }
 /*end*/
+
+@media only screen and (min-width: 50em){
+	
+	
+	#register_container_medium_plus {
+	
+	
+	top: 30%;
+	
+}
+	
+	
+}

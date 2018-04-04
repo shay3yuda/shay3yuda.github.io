@@ -1,7 +1,34 @@
 @media only screen and (min-width: 64em) {
   
-    
-    
+	#register_container_medium_plus {
+	
+	
+	
+}
+	
+	#register_container_medium_plus h2 {
+		
+		font-size: 2.5em;
+	}
+	
+	#register_container_medium_plus p{
+	
+		font-size: 1.5em;
+		margin-bottom: 30px;
+		
+	}
+	
+    #home {
+		
+		width: 80%;
+	}
+	
+	#home aside {
+	
+	grid-template-columns:  1fr 1fr 1fr;
+	grid-gap: 2%;
+
+}
   
 }
 /*end*/

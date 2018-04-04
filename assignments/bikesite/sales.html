@@ -7,11 +7,11 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>The Mountain Spoke | Shop</title>
+    <title>The Mountain Spoke</title>
 
     <meta name="author" content="Shay Yuda">
     
-    <meta name="description" content="Sales page for mountain bikes">
+    <meta name="description" content="Home Page">
     
 
     <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
@@ -29,9 +29,19 @@
     <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views --> 
     
     
-    <!--<script src="js/jquery-3.3.1.min.js"></script> -->
+   <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
         
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<script>
+		
+	$(document).ready(function(){
+    $("#nav_button").click(function(){
+        $("#nav_section").slideToggle(500);
+    });
+	
+});
+    </script> 
 
 </head>
     
@@ -39,28 +49,65 @@
 
     <header>
         
-       
-      
+		<div id="title_n_logo">
+			
+        	<div class="logo">
+            	<img src="images/logo.png" alt="logo">
+        	</div>
+			
+			<div>	
+				<h1>The<br>Mountain<br>Spoke</h1>
+			</div>
+			
+        </div>
+		
+            <button id="nav_button">&#9776;</button>
+        
+        
     </header>
 
-<!-- site navigation use placeholder references -->
-    <nav>
+
+    <nav id="drop_down_nav">
+
+		<div id="nav_section">
+            <ul id="navList" class="hide">
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="tours.html">Adventure Tours</a></li>
+
+                <li><a href="event.html">Events</a></li>
+
+                <li><a href="sales.html">Shop</a></li>
+
+                <li><a href="service.html">Services</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div id="header_img">
+            <img src="images/bike_header_small.jpg" alt="logo">
+        </div> 
       
-        <button id="nav_button">&#9776;</button>
+  </nav>
+	
+  <nav id="bar_nav">
 
-        <ul id="navList" class="hide">
-            <li><a href="index.html">Home</a></li>
+		<div id="nav_section">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
 
-            <li><a href="tours.html">Adventure Tours</a></li>
+                <li><a href="tours.html">Adventure Tours</a></li>
 
-            <li><a href="event.html">Events</a></li>
+                <li><a href="event.html">Events</a></li>
 
-            <li><a href="sales.html">Shop</a></li>
+                <li><a href="sales.html">Shop</a></li>
 
-            <li><a href="service.html">Services</a></li>
+                <li><a href="service.html">Services</a></li>
 
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
       
   </nav>
     
@@ -82,7 +129,7 @@
           </address>
       </aside>
       
-      <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke - Shop</p>
+      <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <a href="references.html">Reference Page</a></p>
       
   </footer>
 

@@ -2,11 +2,13 @@
     Dark Navy    #617087 / rgba(97, 112, 135, .5);		     
     Navy         #6B9DB2
 
-    Lime Green   #C4CB23
+    Lime Green   #C4CB23 / rgba (196, 203, 35, .6)
 
     Gray         #9C9DA2 / rgba(156, 157, 162, .5);
 
-	Ling Gray #d7d8da;
+	Light Gray 	#d7d8da;
+
+	Dark Gray	#6c6c6d;
 
 */
 
@@ -29,8 +31,26 @@ h2, h3, h4, h5, h6 {
 
 p {
     
-    color: #9C9DA2;
+    color: #6c6c6d;
     font-family: "Quicksand", Calibri, sans-serif;
+}
+/* ==== General Links ====== */
+a:link {
+	text-decoration: none;
+	color: #6B9DB2;
+	 font-weight: bold;
+}
+
+a:hover {
+	
+	font-weight: 100;
+}
+
+a:visited {
+	
+	color: #6B9DB2;
+	font-weight: 100;
+		
 }
 
 /* =======Header======== */
@@ -81,6 +101,11 @@ header h1 {
 }
 
 /* ======== NAV ========== */ 
+#bar_nav {
+		
+		display: none;
+	}
+
 
 #nav_section {
     
@@ -142,14 +167,13 @@ header h1 {
 main {
 	width: 80%;
 	margin: auto;
-	margin-top: 5%;
 	background-color: #d7d8da;
-	
-
+	margin-bottom: 10%;
 }
 #header_img {
     
     width: 100%;
+	margin: 0px;
 }
 
 #header_img img{
@@ -158,10 +182,31 @@ main {
     opacity: .7;
 }
 
+#register_container {
+	
+	width: 100%;
+	padding: 5%;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+
+#register_container h2{
+	
+	margin-bottom: 0%;
+}
+
+#register_container p{
+	
+	margin-bottom: 6%;
+}
+
 #register_btn {
 	
 	border:none;
-	background-color: #C4CB23;
+	background-color: rgba(196, 203, 35, .85);
 	color: #617087;
 	font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
 	font-weight: bold;
@@ -169,11 +214,10 @@ main {
 	letter-spacing: .15em;
 	box-shadow: 0px 0px 10px #617087;
 	padding: 2%;
-	width: 180px;
-	margin: 3%;
 	border-radius: 3px;	
 	
 }
+
 
 #register_btn:hover{
 	background-color: #617087;
@@ -187,7 +231,77 @@ main {
 	
 }
 
+
+#home aside {
+	
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+
+}
+/* ====== Links on home page main ==== */
+#home aside a:link h1 {
+	
+	text-decoration: none;
+}
+#home aside a:hover h1 {
+	
+ 	background-color: rgba(196, 203, 35, .6);
+	color: #617087;
+}
+
+#home aside img {
+	width: 100%;
+	opacity: .8
+}
+
+#home aside section {
+	
+	
+}
+
+.text_overlay {
+	width: 100%;
+	position: relative;
+	top:80px;
+	text-align: center;
+    z-index: 3; 
+	
+}
+
+.text_overlay h1 {
+	
+	background-color:  rgba(97, 112, 135, .5);
+	
+	padding-bottom: 1%;
+	margin-top: 0%;
+	text-decoration: none; 
+}
+
+/* ====== FOOTER ======= */
+
 footer {
     
     background-color: #C4CB23;
+	width: 100%;
+	text-align: center;
+	padding: 3% 1% .1% 1%;;
+	box-shadow: 0px -30px 40px rgba(0,0,0,.1);
+	color: #617087;
+}
+
+
+
+#footer_nav {
+	width: 50%;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	margin: auto;
+}
+
+
+.footer-bar {
+	
+	color: #617087;
 }
