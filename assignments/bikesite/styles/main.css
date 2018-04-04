@@ -237,6 +237,8 @@ main {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr;
+	margin-bottom: 10%;
+	margin-top: 5%;
 
 }
 /* ====== Links on home page main ==== */
