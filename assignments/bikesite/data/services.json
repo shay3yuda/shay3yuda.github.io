@@ -1,54 +1,109 @@
 {
-  "towns" : [
+  "services" : [
   {
-    "name": "Franklin",
-    "motto": "Where you will grow!",
-    "yearFounded": 1788,
-    "currentPopulation": 30458,
-    "averageRainfall": 21,
-    "events" : [
-      "March 4: March to the Drum of Donuts",
-      "September 5 - 11: Founder Days",
-      "December 1 - 26: Christmas in the Heart"
-    ]
-  },
-  {
-    "name": "Greenville",
-    "motto": "Green is our way of life.",
-    "yearFounded": 1805,
-    "currentPopulation": 33458,
-    "averageRainfall": 25,
-    "events" : [
-      "February 10-12: Greenbration",
-      "May 8 - 18: Greenville Founder Days",
-      "June 20: Verde and Valiant Day",
-      "November 15-16: Greensome Gathering"
-    ]
-  },
-
-  {
-    "name": "Placerton",
-    "motto": "Positive Placement in Placerton.",
-    "yearFounded": 1946,
-    "currentPopulation": 512,
-    "averageRainfall": 39,
-    "events" : [
-      "July 4: A Blaze of Glory",
-      "October 20: Fall through Fall"
-    ]
-  },
-
-  {
-    "name": "Springfield",
-    "motto": "Where everyone is lifted.",
-    "yearFounded": 1826,
-    "currentPopulation": 17852,
-    "averageRainfall": 17,
-    "events" : [
-      "January 8: Spring into Winter",
-      "April 10-20: Celebration of Life",
-      "July 31-Aug 15: Dog Days of Summer Festival"
-    ]
+    "Tune-Ups" : [
+		{
+		"type": "Basic Tune-Up",	
+		"price": "$39.99",	
+		}, {
+		"type": "Premium Tune-Up",	
+		"price": "$69.99",	
+		}, {
+		"type": "Brake System Tune-Up",	
+		"price": "$24.99",	
+		}, {
+		"type": "Drivetrain Tune-Up",	
+		"price": "$24.99",	
+		}],
+	  
+	  "Brakes": [
+		   {
+		"type": "Install Rotor",	
+		"price": "$7.99",	
+		}, {
+		"type": "Bleed Hydraulic Disc Brake",	
+		"price": "$14.99",	
+		}, {
+		"type": "Install Rim Brake Set",	
+		"price": "$12.99",	
+		}, {
+		"type": "Install Hydraulic Disc Brakes",	
+		"price": "$24.99",	
+		}, {
+		"type": "Install Mechanicals Disc Brakes",	
+		"price": "$14.99",	
+		}, {
+		"type": "Adjust/Install Rim Brake Pads",	
+		"price": "$9.99",	
+		}, {
+		"type": "Adjust/Install Disc Brake Pads",	
+		"price": "$14.99",	
+		}],
+	  
+	  "Wheels": [
+		   {
+		"type": "Install Inner Tube",	
+		"price": "$6.99",	
+		}, {
+		"type": "Repair Inner Tube",	
+		"price": "$8.99",	
+		}, {
+		"type": "True Wheel",	
+		"price": "$12.99",	
+		}, {
+		"type": "Install Spoke (Each)",	
+		"price": "$5.99",	
+		}, {
+		"type": "Adjust Hub (Front or Rear)",	
+		"price": "$5.99",	
+		}, {
+		"type": "Overhaul Front Hub",	
+		"price": "$14.99",	
+		}, {
+		"type": "Overhaul Rear Hub",	
+		"price": "$18.99",	
+		}],
+	  
+	   "Drivetrain": [
+		   {
+		"type": "Install or Overhaul Bottom Bracket",	
+		"price": "$14.99",	
+		}, {
+		"type": "Install Chain",	
+		"price": "$14.99",	
+		}, {
+		"type": "Remove/Clean/Reinstall Chain",	
+		"price": "$9.99",	
+		}, {
+		"type": "Install Pedals",	
+		"price": "$4.99",	
+		}, {
+		"type": "Install Crank (1 Piece)",	
+		"price": "$14.99",	
+		}, {
+		"type": "Install Crank (3 Piece)",	
+		"price": "$23.99",	
+		}],
+	  
+	  "Installs": [
+		   {
+		"type": "Child Carrier",	
+		"price": "$14.99",	
+		}, {
+		"type": "Cycle Computer",	
+		"price": "$9.99",	
+		}, {
+		"type": "Fenders",	
+		"price": "$12.99",	
+		}, {
+		"type": "Rear Rack",	
+		"price": "$4.99",	
+		}, {
+		"type": "Saddle",	
+		"price": "$1.99",	
+		}, {
+		"type": "Water Bottle Cage",	
+		"price": "$1.99",	
+		}],
+	  
   }
- ]
-}
