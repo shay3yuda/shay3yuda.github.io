@@ -1,7 +1,9 @@
 {
   "towns" : [
-  {
-    "name": "Franklin",
+  { 
+	"name": [
+	{
+	
     "motto": "Where you will grow!",
     "yearFounded": 1788,
     "currentPopulation": 30458,
