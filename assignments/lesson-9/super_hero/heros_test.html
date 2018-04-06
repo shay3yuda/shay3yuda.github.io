@@ -77,15 +77,13 @@
       <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
       
   </footer>
-	
-<script>
-	
- var header = document.querySelector('th');
+<script>	
+ var header = document.querySelector('header');
 
- var section = document.querySelector('td');
+    var section = document.querySelector('section');
 
 
-    var requestURL = 'https://shay3yuda.github.io/assignments/bikesite/data/test.json';
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
     
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
@@ -149,9 +147,7 @@
         section.appendChild(myArticle);      
         }
     }
-	
-</script>	
-
+	</script>
 
 </body>
 </html>
