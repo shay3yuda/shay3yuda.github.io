@@ -413,6 +413,23 @@ fieldset textarea {
 	font-size: 1.3em;
 }
 
+/* ===== Tour Page ====== */
+#tours h3 {
+	
+	color: #617087;
+	font-size: 1.5em;
+	margin-top: 1%;
+}
+
+.catagory {
+	
+ 	color: #6B9DB2; 
+    font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
+	font-weight: bold;
+	font-size: 1.3em;
+}	
+
+
 /* ====== FOOTER ======= */
 
 footer {
