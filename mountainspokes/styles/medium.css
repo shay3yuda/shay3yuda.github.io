@@ -58,14 +58,13 @@ header h1 {
 	.navList {
 	margin: 0px;
 	width: 100%;
-	padding: 0px;
+	padding: 0px;	
 }
 
 
 	.nav_section ul li {
    
 	display: inline;
-	
 	margin: 0px;
 }
 
@@ -78,9 +77,10 @@ header h1 {
 	padding-left: 4px;
 	padding-right: 4px;
 	
-	padding-top: 5px;
-	padding-bottom: 7px;
-    
+	padding-top: 21px;
+	padding-bottom: 22px;
+	padding-left: 10px;	
+    padding-right: 10px;	
 }
 
 /* ===== Main Home Page ======= */
