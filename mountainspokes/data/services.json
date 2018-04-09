@@ -1,0 +1,108 @@
+{
+  "services" : {
+    "Tune-Ups" : [
+		{
+		"type": "Basic Tune-Up",	
+		"price": "$39.99",	
+		}, {
+		"type": "Premium Tune-Up",	
+		"price": "$69.99",	
+		}, {
+		"type": "Brake System Tune-Up",	
+		"price": "$24.99",	
+		}, {
+		"type": "Drivetrain Tune-Up",	
+		"price": "$24.99",	
+		}],
+	  
+	  "Brakes": [
+		   {
+		"type": "Install Rotor",	
+		"price": "$7.99",	
+		}, {
+		"type": "Bleed Hydraulic Disc Brake",	
+		"price": "$14.99",	
+		}, {
+		"type": "Install Rim Brake Set",	
+		"price": "$12.99",	
+		}, {
+		"type": "Install Hydraulic Disc Brakes",	
+		"price": "$24.99",	
+		}, {
+		"type": "Install Mechanicals Disc Brakes",	
+		"price": "$14.99",	
+		}, {
+		"type": "Adjust/Install Rim Brake Pads",	
+		"price": "$9.99",	
+		}, {
+		"type": "Adjust/Install Disc Brake Pads",	
+		"price": "$14.99",	
+		}],
+	  
+	  "Wheels": [
+		   {
+		"type": "Install Inner Tube",	
+		"price": "$6.99",	
+		}, {
+		"type": "Repair Inner Tube",	
+		"price": "$8.99",	
+		}, {
+		"type": "True Wheel",	
+		"price": "$12.99",	
+		}, {
+		"type": "Install Spoke (Each)",	
+		"price": "$5.99",	
+		}, {
+		"type": "Adjust Hub (Front or Rear)",	
+		"price": "$5.99",	
+		}, {
+		"type": "Overhaul Front Hub",	
+		"price": "$14.99",	
+		}, {
+		"type": "Overhaul Rear Hub",	
+		"price": "$18.99",	
+		}],
+	  
+	   "Drivetrain": [
+		   {
+		"type": "Install or Overhaul Bottom Bracket",	
+		"price": "$14.99",	
+		}, {
+		"type": "Install Chain",	
+		"price": "$14.99",	
+		}, {
+		"type": "Remove/Clean/Reinstall Chain",	
+		"price": "$9.99",	
+		}, {
+		"type": "Install Pedals",	
+		"price": "$4.99",	
+		}, {
+		"type": "Install Crank (1 Piece)",	
+		"price": "$14.99",	
+		}, {
+		"type": "Install Crank (3 Piece)",	
+		"price": "$23.99",	
+		}],
+	  
+	  "Installs": [
+		   {
+		"type": "Child Carrier",	
+		"price": "$14.99",	
+		}, {
+		"type": "Cycle Computer",	
+		"price": "$9.99",	
+		}, {
+		"type": "Fenders",	
+		"price": "$12.99",	
+		}, {
+		"type": "Rear Rack",	
+		"price": "$4.99",	
+		}, {
+		"type": "Saddle",	
+		"price": "$1.99",	
+		}, {
+		"type": "Water Bottle Cage",	
+		"price": "$1.99",	
+		}],
+	  
+  }}
