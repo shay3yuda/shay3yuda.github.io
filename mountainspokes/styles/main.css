@@ -138,7 +138,7 @@ header h1 {
 }
 
 /* ======== NAV  Drop Down ========== */ 
-#drop_down_nav #nav_section {
+#drop_down_nav .nav_section {
     
     position: absolute;
     z-index: 3;  
@@ -149,7 +149,7 @@ header h1 {
 }
 
 
-#drop_down_nav #nav_section ul li {
+#drop_down_nav .nav_section ul li {
     
     list-style: none;
     font-family: "Quicksand", Calibri, sans-serif;
@@ -160,21 +160,21 @@ header h1 {
 }
 
 
-#drop_down_nav #nav_section ul li a:link {
+#drop_down_nav .nav_section ul li a:link {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#drop_down_nav #nav_section ul li a:visited {
+#drop_down_nav .nav_section ul li a:visited {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#drop_down_nav #nav_section ul li:hover {
+#drop_down_nav .nav_section ul li:hover {
     
     text-decoration: none;
     color: #C4CB23;
@@ -184,7 +184,7 @@ header h1 {
     
 }
 
-#drop_down_nav #nav_section ul li a:hover {
+#drop_down_nav .nav_section ul li a:hover {
 	
 	font-weight: 100;
 }
@@ -208,7 +208,7 @@ header h1 {
 	}
 
 
-#bar_nav #nav_section {
+#bar_nav .nav_section {
     
     position: absolute;
     z-index: 3;  
@@ -219,7 +219,7 @@ header h1 {
 }
 
 
-#bar_nav #nav_section ul li {
+#bar_nav .nav_section ul li {
     
     list-style: none;
     font-family: "Quicksand", Calibri, sans-serif;
@@ -229,21 +229,21 @@ header h1 {
 }
 
 
-#bar_nav #nav_section ul li a:link {
+#bar_nav .nav_section ul li a:link {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#bar_nav #nav_section ul li a:visited {
+#bar_nav .nav_section ul li a:visited {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#bar_nav #nav_section ul li a:hover {
+#bar_nav .nav_section ul li a:hover {
     
     text-decoration: none;
     color: #C4CB23;
@@ -274,13 +274,13 @@ main {
 	background-color: #d7d8da;
 	margin-bottom: 10%;
 }
-#header_img {
+.header_img {
     
     width: 100%;
 	margin: 0px;
 }
 
-#header_img img{
+.header_img img{
     
     width: 100%;
     opacity: .7;

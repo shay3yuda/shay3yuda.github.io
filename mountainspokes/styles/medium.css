@@ -48,7 +48,7 @@ header h1 {
 	
 /* ==== NAV BAR ====== */
 	
-	#nav_section {
+	.nav_section {
 	width: 100%;
 	padding-top: 2px;
 	padding-bottom: 7px;	
@@ -62,7 +62,7 @@ header h1 {
 }
 
 
-	#nav_section ul li {
+	.nav_section ul li {
    
 	display: inline;
 	
@@ -70,7 +70,7 @@ header h1 {
 }
 
 
-	#nav_section ul li a:link {
+	.nav_section ul li a:link {
     
     text-decoration: none;
     color: #C4CB23;
