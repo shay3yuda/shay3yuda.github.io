@@ -144,6 +144,22 @@ header h1 {
 	}
 	
 	
+/* ========== MAIN Contact Page ============ */
+#contact_page, #events {
+	
+	margin-top: 10%;
+	width: 70%;
+}	
+
+	
+#contact_page .button {
+	
+	width: 20%;
+	margin-top: 4%;
+
+	
+}	
+	
  }
 /*end*/
 

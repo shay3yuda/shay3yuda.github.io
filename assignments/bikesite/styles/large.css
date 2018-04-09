@@ -1,10 +1,28 @@
 @media only screen and (min-width: 64em) {
   
-	#register_container_medium_plus {
 	
+/* ======== NAV ========== */ 
+
+
+	#navList {
+		margin-left: 10%;
+		
+	}
 	
+	#title_n_logo {
+		
+		margin-right: 10%;
+	}
 	
-}
+/* ===== Top Margin for Pages ===== */
+	
+.top_margin {
+	
+	margin-top: 6%;
+}	
+
+/* === Index Registaration container === */ 	
+	
 	
 	#register_container_medium_plus h2 {
 		
@@ -29,6 +47,24 @@
 	grid-gap: 2%;
 
 }
+	
+	/* ========== MAIN Contact Page ============ */
+#contact_page, #events {
+	width: 50%;
+}	
+
+form {
+	
+	width: 75%;
+}
+	
+#contact_page .button {
+	
+	width: 20%;
+	margin-top: 4%;
+
+	
+}	
   
 }
 /*end*/
