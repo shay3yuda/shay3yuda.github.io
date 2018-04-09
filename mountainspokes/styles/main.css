@@ -17,13 +17,13 @@ body {
     background-color: #d7d8da;
 }
 
-h1 {
+h1, h2 {
     
     color: #C4CB23;
     font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
 }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
     
     color: #6B9DB2; 
     font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
@@ -112,7 +112,7 @@ header {
    
 }
 
-header h1 {
+header h2 {
 	
 	font-size: 0.8em;
 	margin-left: 1%; 
@@ -319,11 +319,11 @@ main {
 
 }
 /* ====== Links on home page main ==== */
-#home aside a:link h1, #events aside a:link h1 {
+#home aside a:link h2, #events aside a:link h2 {
 	
 	text-decoration: none;
 }
-#home aside a:hover h1, #events aside a:hover h1 {
+#home aside a:hover h2, #events aside a:hover h2 {
 	
  	background-color: rgba(196, 203, 35, .6);
 	color: #617087;
@@ -344,7 +344,7 @@ main {
 	
 }
 
-.text_overlay h1 {
+.text_overlay h2 {
 	
 	background-color:  rgba(97, 112, 135, .5);
 	
