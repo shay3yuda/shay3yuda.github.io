@@ -40,6 +40,11 @@ p {
 	margin-top: 10%;
 }
 
+.image {
+	
+	width: 100%;
+}
+
 /* ======= basic button style =======*/
 .button {
 	
@@ -428,6 +433,12 @@ fieldset textarea {
 	font-weight: bold;
 	font-size: 1.3em;
 }	
+
+.tour_groups {
+	
+	display: flex;
+	flex-flow: column;
+}
 
 
 /* ====== FOOTER ======= */
