@@ -109,8 +109,20 @@
         ShowData(table);
     }
 	
-	function populateTableHead(jsonObj)
-	
+	function populateTableHead(jsonObj){
+		var servicesSelection = jsonObj["services"];
+		
+		for (var i = 0; i < servicesSelection.length; i++) {
+			
+			var serviceTitle = document.createElement('th');
+			
+			serviceTitle.textContent = servicesSelection[i].services;
+			
+		var	type
+			
+		for (var j = 0; j < servicesSelection.length; i++)
+		}
+		
 	
 	</script>
 
