@@ -488,12 +488,13 @@ fieldset textarea {
 	display: flex;
 }
 
-.info {
+.info, .info_2, .info_3 {
 	
 	background-color: rgba(97, 112, 135, .2);
 	padding: 3px 15px 15px 15px;
 	display: none;
 }
+
 
 .cost {
 	
