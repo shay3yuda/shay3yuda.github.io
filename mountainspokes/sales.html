@@ -44,7 +44,18 @@
     });
 	
 });
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+	$('.details > .show').hover(function() {
+            
+            $(".info").slideToggle(200);
+        });
+        
+});
     </script> 
+	
 	
 </head>
     
@@ -109,8 +120,51 @@
       
   </nav>
     
-    <main>
+    <main id="sales_page" class="top_margin">
 		
+		<h2 class="page_title">Gear Up</h2>
+		
+		<h3>Women's Bikes</h3>
+		
+		<section>
+			
+			<div class="details">
+				
+				<div class="show">
+			
+					<img src="images/sales/raleigh.jpg">
+
+					<h4 class="model">Raleigh Eva 1</h4>
+
+					<div>
+
+						<div class="info">
+
+							<ul>
+								<li><span class="catagory">Wheel Size:</span> 27.5 inches</li>
+
+								<li><span class="catagory">Suspension Type:</span>  No-Suspention</li>
+
+								<li><span class="catagory">Frame Material:</span> Steel</li>
+
+								<li><span class="catagory">Brake Style:</span> Disc Brakes - Machanical</li>
+
+								<li><span class="catagory">Number Of Speeds:</span> 21</li>
+							</ul>
+
+							<button class="button">Order</button>
+						</div>
+
+						<div class="cost">
+							<h4>Cost: $359.99</h4>
+						</div>
+
+					</div>
+				</div>	
+			
+			</div>
+		
+		</section>
 		
     </main>
     

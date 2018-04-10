@@ -14,7 +14,7 @@
     <meta name="description" content="Home Page">
 	
 	
-	<link rel="icon" href="images/logo_icon.png" />
+	<link rel="icon"  href="images/logo_icon.png" />
     
 
     <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
@@ -45,6 +45,74 @@
 	
 });
     </script> 
+	
+	<!--
+	<script>
+	var tuneup = {
+		service: "Tune-Ups",
+		type: ["Basic Tune-UP", "Premium Tune-Up", "Brake System Tune-Up", "Drivetrain Tune-Up"],
+		cost: ["$39.99", "$69.99", "$24.99", "$24.99"]
+		
+	}
+	
+	var brakes = {
+		service: "Breaks",
+		type: ["Install Rotor", "Bleed Hydraulic Disc Brake", "Install Rim Brake Set", "Install Hydraulic Disc Brakes", "Install Mechanicals Disc Brakes", "Adjust/Install Rim Brake Pads", "Adjust/Install Disc Brake Pads"],
+		cost: ["$7.99", "$14.99", "$12.99", "$24.99", "$14.99", "$9.99", "$14.99"]
+		
+	}
+	
+	var wheels = {
+		service: "Wheels",
+		type: ["Install Inner Tube", "Repair Inner Tube", "True Wheel", "Install Spoke (Each)", "Adjust Hub (Front or Rear)", "Overhaul Front Hub", "Overhaul Rear Hub" ],
+		cost: ["$6.99", "$8.99", "$12.99", "$5.99", "$5.99", "$14.99", "$18.99"]
+		
+	}
+		
+	var installs = {
+		service: "Installs",
+		type: ["Child Carrier", "Cycle Computer", "Fenders", "Rear Rack", "Saddle", "Water Bottle Cage" ],
+		cost: ["$14.99", "$9.99", "$12.99", "$4.99", "$1.99", "$1.99"]
+		
+	}
+	
+	
+	var services = [tuneup, brakes, wheels, installs];
+	
+	
+	
+	services = JSON.stringify(services);
+	
+	console.log(services);
+	</script> -->
+	
+	<script>
+	
+	var title = document.querySelector('.service');
+
+    var type = document.querySelector('.type');
+		
+	var price = document.querySelector('.price');	
+
+
+    var requestURL = 'https://shay3yuda.github.io/mountainspokes/data/services.json';
+    
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+        
+    request.responseType = 'json';  
+    request.send();
+        
+    request.onload = function() {
+        var table = request.response; //superHeroes
+        populateTableHead(table); //populate header
+        ShowData(table);
+    }
+	
+	function populateTableHead(jsonObj)
+	
+	
+	</script>
 
 </head>
     
@@ -70,7 +138,7 @@
     </header>
 
 
-   <nav id="drop_down_nav">
+    <nav id="drop_down_nav">
 
 		<div class="nav_section">
             <ul class="nav_list hide">
@@ -82,9 +150,9 @@
 
                 <li><a href="sales.html">Shop</a></li>
 
-                <li><a href="service.html">Services</a></li>
+                <li class="active"><a href="service.html">Services</a></li>
 
-                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
       
@@ -102,55 +170,32 @@
 
                 <li><a href="sales.html">Shop</a></li>
 
-                <li><a href="service.html">Services</a></li>
+                <li class="active_bar"><a href="service.html">Services</a></li>
 
-                <li class="active_bar"><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
       
   </nav>
     
-    <main id="contact_page" class="top_margin">
+    <main>
         
-       	<section>
-		
-		<h2 class="page_title">Contact Us</h2>
-		
-			<h3>The Mountain Spokes</h3>
-			<p>3950 Valley Commons Drive<br>Bozeman, MT 55333<br><a href="https://goo.gl/maps/KnsZ7zn87xP2">Show On Map</a></p>
-
-		</section>
-		
-		<section>
-		
-			<h4>Phone: <span class="body_copy">999-999-9999</span></h4>
+       	<table>
+			<tr>
+				<th class="service"></th>
+			</tr>
+			<tbody>
+				<tr>
+				<td class="type"></td>
+				<td class="price"></td>	
+				</tr>
+			</tbody>
 			
-			<h4>E-mail:<span class="body_copy"> mountainspoke@ride.com</span></h4>	
-		
-		</section>
-		
-		<form>
-	
-			<fieldset>
-				
-				<legend><h3>Message Center</h3></legend>
-
-				<input type="text" name="name" id="name" placeholder="Name">
-				
-				<input type="email" name="email" id="email" placeholder="E-mail">
-				
-				<textarea id="comment" name="comment"  placeholder="Message Here..."></textarea>
-				
-				<button class="button">send</button>
-				
-			</fieldset>
-		
-		</form>
-		
+		</table>
         
     </main>
     
-  <footer>
+   <footer>
       
       <aside>
           <address>
@@ -171,7 +216,7 @@
       <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke </p>
       
   </footer>
- 
+  
 	
 </body>    
 </html>

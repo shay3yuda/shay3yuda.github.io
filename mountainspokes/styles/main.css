@@ -1,6 +1,6 @@
 /* COLORS
     Dark Navy    #617087 / rgba(97, 112, 135, .5);		     
-    Navy         #6B9DB2
+    Navy         #6B9DB2 / rgba(107, 157, 178, .5);
 
     Lime Green   #C4CB23 / rgba (196, 203, 35, .6)
 
@@ -33,6 +33,11 @@ p {
     
     color: #6c6c6d;
     font-family: "Quicksand", Calibri, sans-serif;
+}
+
+.page_title {
+	
+	font-size: 2.5em;
 }
 
 .top_margin {
@@ -392,7 +397,7 @@ fieldset input, fieldset textarea {
 	
 	margin-bottom: 15px;
 	border: 1px solid #C4CB23;
-	background-color: 	#d7d8da;
+	background-color: #EBEBEC;
 	color: #6c6c6d;
 	padding: 4px;
 	font-family: "Quicksand", Calibri, sans-serif;
@@ -453,6 +458,64 @@ fieldset textarea {
 	font-size: 1.3em;
 	padding: 10px;
 }
+
+/* ===== Tour Page ====== */
+#sales_page h3 {
+	
+	font-size: 1.5em;
+}
+
+#sales_page li {
+	list-style-image: url(/images/bullet_blue.png);
+	color: #6c6c6d;
+    font-family: "Quicksand", Calibri, sans-serif;
+}
+
+#sales_page .catagory {
+	
+	font-size: 1.2em;
+	font-weight: 100; 
+}
+
+#sales_page button {
+	
+	font-size: 1.3em;
+	padding: 10px;
+}
+
+#sales_page section {
+	
+	display: flex;
+}
+
+.info {
+	
+	background-color: rgba(97, 112, 135, .2);
+	padding: 3px 15px 15px 15px;
+	display: none;
+}
+
+.cost {
+	
+	background-color: rgba(196, 203, 35, .6);
+	padding: 1px 0px;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.model {
+	
+	background-color: rgba(107, 157, 178, .8);
+	margin-top: -3px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.5em;
+	text-align: center;
+	z-index: 3;
+	color: #C4CB23;
+}
+
 
 /* ====== FOOTER ======= */
 
