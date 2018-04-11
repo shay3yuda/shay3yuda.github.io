@@ -48,11 +48,15 @@
 
 }
 /* ==== Events === */
+	#events main {
+		
+		width:100%;
+	}
 	
 #ads_events {
-	display: flex;
-	flex-flow: row;
-	flex-wrap: nowrap;
+	grid-template-columns:  1fr 1fr;
+	grid-gap: 2%;
+	width: 100%;
 	
 	
 }	

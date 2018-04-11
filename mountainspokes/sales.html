@@ -70,6 +70,12 @@
         });
         
 });
+		
+	$(document).ready(function(){
+    $("#toggle").click(function(){
+        $("#w_bikes").slideToggle(500);
+    });
+});		
     </script> 
 	
 	
@@ -140,9 +146,10 @@
 		
 		<h2 class="page_title">Gear Up</h2>
 		
-		<h3>Women's Bikes</h3>
+		<h3>Bikes<span class="drop"> &raquo;</span></h3>
 		
-		<section>
+		
+		<section id="w_bikes">
 <!-- Frist Model --->			
 			<div class="details">
 				
@@ -259,6 +266,7 @@
 			</div>
 		
 		</section>
+
 		
     </main>
     

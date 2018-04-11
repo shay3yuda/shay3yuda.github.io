@@ -471,11 +471,26 @@ fieldset textarea {
 	padding: 10px;
 }
 
-/* ===== Tour Page ====== */
+
+
+
+/* ===== Sales Page ====== */
+
+.drop {
+	font-size: 1.3em;
+}
+
+#w_bikes {
+	
+	display: none;
+}
+
 #sales_page h3 {
 	
 	font-size: 1.5em;
 }
+
+
 
 #sales_page li {
 	list-style-image: url(/images/bullet_blue.png);
