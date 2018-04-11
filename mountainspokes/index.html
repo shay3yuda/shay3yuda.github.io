@@ -31,15 +31,15 @@
     <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views --> 
     
     
-   <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+  <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
         
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	
 	<script>
 		
 	$(document).ready(function(){
     $("#nav_button").click(function(){
-        $("#nav_section").slideToggle(500);
+        $("#nav_toggle").slideToggle(500);
     });
 	
 });
@@ -71,7 +71,7 @@
 
     <nav id="drop_down_nav">
 
-		<div class="nav_section">
+		<div class="nav_section" id="nav_toggle">
             <ul class="nav_list hide">
                 <li class="active"><a href="index.html">Home</a></li>
 

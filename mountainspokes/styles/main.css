@@ -48,9 +48,9 @@ p {
 .image {
 	
 	width: 100%;
-}
+} 
 
-/* ======= basic button style =======*/
+/* ======= basic button style =======*/ 
 .button {
 	
 	border:none;
@@ -95,6 +95,8 @@ a:visited {
 		
 }
 
+
+
 /* =======Header======== */
 header {
     width: 100%;
@@ -117,7 +119,7 @@ header {
    
 }
 
-header h2 {
+header h1 {
 	
 	font-size: 0.8em;
 	margin-left: 1%; 
@@ -128,7 +130,7 @@ header h2 {
 	display: flex;
 	flex-flow: row;
 	flex-wrap: nowrap;
-	width: 140px;
+	width:200px;
 }
 
 
@@ -163,6 +165,7 @@ header h2 {
 	margin: 3%;
     width: 100%;
 }
+
 
 
 #drop_down_nav .nav_section ul li a:link {
@@ -577,3 +580,4 @@ footer {
 	
 	color: #617087;
 }
+
