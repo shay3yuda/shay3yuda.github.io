@@ -423,6 +423,18 @@ fieldset textarea {
 	font-size: 1.3em;
 }
 
+#ads_events {
+	
+	display: grid;
+	width: 90%;
+	margin: auto;
+	grid-template-columns: 1fr;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	
+
+}
+
 /* ===== Tour Page ====== */
 #tours h3 {
 	
