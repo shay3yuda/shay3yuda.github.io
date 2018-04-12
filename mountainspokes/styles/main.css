@@ -151,7 +151,6 @@ header h1 {
     z-index: 3;  
     background-color: rgba(97, 112, 135, .6);
     padding-right: 13%;
-   	
 	margin-bottom: 0%;
 }
 
@@ -209,7 +208,7 @@ header h1 {
 }
 
 /* ====== nav bar ========= */
-
+/*
 #bar_nav {
 		
 		display: none;
@@ -265,14 +264,7 @@ header h1 {
 
 /* ====== Way Finding ===== */
 
-.active_bar a {
-	
-	background-color: #617087;
-	border-bottom: 2px solid #c4cb23;
-	border-top: none;
-	font-weight: bold;
-	
-}
+
 
 /* ========== MAIN Index ============ */
 

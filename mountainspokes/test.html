@@ -46,10 +46,24 @@
 });
     </script> 
 	
-	<!--
+	
 	<script>
-	var tuneup = {
-		service: "Tune-Ups",
+	var basicTune = {
+		type: "Basic Tune-UP",
+		cost: "$39.99"}
+/*	
+	var
+{
+		type: "Premium Tune-Up",
+		cost: "$69.99"},
+{
+type: "Brake System Tune-Up",
+		cost: "$24.99"},
+
+{type: "Drivetrain Tune-Up",
+		cost: "$24.99"};
+
+
 		type: ["Basic Tune-UP", "Premium Tune-Up", "Brake System Tune-Up", "Drivetrain Tune-Up"],
 		cost: ["$39.99", "$69.99", "$24.99", "$24.99"]
 		
@@ -79,53 +93,124 @@
 	
 	var services = [tuneup, brakes, wheels, installs];
 	
+	*/
 	
+	services = JSON.stringify(basicTune);
 	
-	services = JSON.stringify(services);
-	
-	console.log(services);
+	console.log(basicTune);
 	</script> -->
 	
 	<script>
 	
-	var title = document.querySelector('.service');
-
-    var type = document.querySelector('.type');
-		
-	var price = document.querySelector('.price');	
-
-
-    var requestURL = 'https://shay3yuda.github.io/mountainspokes/data/services.json';
-    
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-        
-    request.responseType = 'json';  
-    request.send();
-        
-    request.onload = function() {
-        var table = request.response; //superHeroes
-        populateTableHead(table); //populate header
-        ShowData(table);
-    }
 	
-	function populateTableHead(jsonObj){
-		var servicesSelect = jsonObj["services"];
+		//var section = document.querySelector('section');
 		
-		/* for (var i = 0; i < servicesSelect.service.length; i++) {
+	/*	
+		
+		var serviceData = new XMLHttpRequest();
+		serviceData.open('GET', 'https://shay3yuda.github.io/mountainspokes/data/services.json', true );
+		
+		serviceData.send();
+		
+		serviceData.onload = function (){
 			
-			var serviceTitle = document.createElement('th');
+			var tableInfo = JSON.parse(serviceData.responseText);
 			
-			serviceTitle.textContent = servicesSelection[i].services;
 			
-		var	type
+			var filledHead = fillTableHead(tableInfo);
 			
-		for (var j = 0; j < servicesSelection.length; i++)
+			var fill = filledHead;
+			
+		
+		console.log(tableInfo);	
+			
+	document.getElementById('tuneUps').innerHTML = filledHead;		
+			
+			
+		function fillTableHead(jsonObject)	{
+			
+			var head = jsonObject[0].service[0];
+			
+			var tuneType = jsonObject[0].type
+			
+			for (var i = 0; i < tuneType.length; i++){
+				
+				
+				return head;
+			}
+				
+			
+				
+		
 		}
-		*/
+			
+		}
+	/*	
 		
-		console.log(servicesSelect)
-	
+	function fillTable(jsonObj) {
+		
+		var catagory = jsonObj.services;
+		
+		for (var i = 0; i < catagory.length; i++) {
+			
+			var table = document.createElement("table");
+			var tHead = document.createElement("thead");
+			var headRow = document.createElement("tr");
+			var myTh = document.createElement("th");
+			var myh3 = document.createElement("h3");
+			
+			myh3.textContent = catagory[i].service;
+			
+			myTh.appendChild(myh3);
+			headRow.appendChild(myTh);
+			
+//table body
+			
+			
+			typeP.textContent = catagory[i].type;
+			
+			var typeData = jsonObj["type"];
+			for(var j = 0; j < typeData.length; j++){
+			
+			var tbody = document.createElement("tbody");
+			var tableRow = document.createElement("tr");
+			var typeData = document.createElement("td");
+			var typeP = document.createElement("p");	
+				
+			typeP.textContent = typeData[j];
+				
+			typeData.appendChild(typeP);
+			tableRow.appendChild(typeData);	
+				
+			}
+				
+			var costData = jsonObj["cost"];
+			for(var k = 0; k < costData.length; k++){
+			
+			var tdCost = document.createElement("td")
+			var costP = document.createElement("p");
+				
+			costP.textContent = costData[k];
+				
+			tdCost.appendChild(costP);
+			tableRow.appendChild(tdCost);	
+			}
+		table.appendChild(tHead);
+		tHead.appendChild(headRow);
+
+		
+		table.appendChild(tbody);
+		tbody.appendChild(tableRow);
+		
+			
+		section.appendChild(table);
+			
+		}
+			
+			
+		
+	}
+*/
 	</script>
 
 </head>
@@ -194,18 +279,130 @@
     
     <main>
         
-       	<table>
-			<tr>
-				<th class="service"></th>
-			</tr>
-			<tbody>
-				<tr>
-				<td class="type"></td>
-				<td class="price"></td>	
-				</tr>
-			</tbody>
+		<section>
 			
-		</table>
+			<table>
+				<thead>
+					<tr>
+						<th id="tuneUps">title</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td id="tune1">type</td>
+						<td id="tune_c1">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="tune2">type</td>
+						<td id="tune_c2">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="tune3">type</td>
+						<td id="tune_c3">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="tune4">type</td>
+						<td id="tune_c4">cost</td>
+					</tr>
+				</tbody>
+				
+			</table>
+			
+			<table>
+				<thead>
+					<tr>
+						<th id="breaks">title</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td id="brake1">type</td>
+						<td id="brake_c1">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="tune2">type</td>
+						<td id="brake_c2">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="tune3">type</td>
+						<td id="brake_c3">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="tune4">type</td>
+						<td id="brake_c4">cost</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<table>
+				<thead>
+					<tr>
+						<th id="wheels">title</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td id="wheel1">type</td>
+						<td id="wheel_c1">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="wheel2">type</td>
+						<td id="wheel_c2">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="wheel3">type</td>
+						<td id="wheel_c3">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="wheel4">type</td>
+						<td id="wheel_c4">cost</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<table>
+				<thead>
+					<tr>
+						<th id="intalls">title</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td id="intall1">type</td>
+						<td id="tune_c1">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="intall2">type</td>
+						<td id="intall_c2">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="intall3">type</td>
+						<td id="intall_c3">cost</td>
+					</tr>
+					
+					<tr>
+						<td id="intall4">type</td>
+						<td id="intall_c4">cost</td>
+					</tr>
+				</tbody>
+			</table>
+			
+		</section>
         
     </main>
     
