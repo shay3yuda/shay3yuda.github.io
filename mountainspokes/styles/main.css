@@ -472,9 +472,9 @@ fieldset textarea {
 	font-size: 1.3em;
 }
 
-#w_bikes {
-	
+.menu_down {
 	display: none;
+	
 }
 
 #sales_page h3 {
@@ -559,14 +559,38 @@ fieldset textarea {
 	
 }
 
+.rotated {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -moz-transform: rotate(90deg); /* Firefox */
+  -webkit-transform: rotate(90deg); /* Safari and Chrome */
+  -o-transform: rotate(90deg); /* Opera */
+}
+
+.menu {
+	display:flex;
+	
+}
+
+.menu img {
+	
+	width: 25px;
+	position: relative;
+	top: 25px;
+	left: 10px;
+}
 /* ====== Service Page ===== */
+
+#service_img {
+	
+	margin-bottom: 25px;
+}
 
 #table_group{
 	
 	display: grid;
 	grid-template-columns: 1fr;
-	margin-bottom: 10%;
-		
+	margin-bottom: 10%;	
 	margin: auto;
 	width: 100%;
 

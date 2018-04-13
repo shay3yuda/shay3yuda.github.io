@@ -23,15 +23,20 @@
 
 /* === Index Registaration container === */ 	
 	
+	#register_container_medium_plus {
+	
+
+	     top: 32%;
+	}
 	
 	#register_container_medium_plus h2 {
 		
-		font-size: 2.5em;
+		font-size: 2.3em;
 	}
 	
 	#register_container_medium_plus p{
 	
-		font-size: 1.5em;
+		font-size: 1.3em;
 		margin-bottom: 30px;
 		
 	}
@@ -92,7 +97,35 @@ form {
 	
 }		
 	
+/*===== Services ====== */
 	
-  
+	#service_page {
+		width: 50%;
+	}
+	
+	
+	#service_page img {
+		
+		opacity: .8;
+	}
+	
+	#table_group {
+		
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	
 }
 /*end*/
+
+@media only screen and (min-width: 80em) {
+	
+	#register_container_medium_plus {
+	
+
+	top: 43%;
+	}
+	
+}

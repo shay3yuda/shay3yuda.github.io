@@ -108,9 +108,9 @@ header h1 {
 	
 	#register_container_medium_plus h2 {
 		
-		color: #617087;
-		text-shadow: 1px 1px 3px #9C9DA2;
-		font-size: 1.8em;
+		color: #d7d8da;
+		text-shadow: 1px 1px 3px #617087;
+		font-size: 1.5em;
 	}
 	
 	#register_container_medium_plus p{
@@ -121,10 +121,13 @@ header h1 {
 		text-shadow: 3px 3xp 10px black;
 		margin-bottom: 10px;
 		text-shadow: 1px 1px 1px #617087;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	
-	
+	#register_container_medium_plus button {
+		
+		font-size: 1.5em;
+	}
 	
 	#home {
 		
@@ -182,10 +185,14 @@ header h1 {
 	
 	#register_container_medium_plus {
 	
-	
-	top: 30%;
+	top: 20%;
 	
 }
+	
+	#register_container_medium_plus h2 {
+		
+		font-size: 2em;
+	}
 	
 	
 }

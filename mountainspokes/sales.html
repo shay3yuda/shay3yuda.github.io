@@ -74,10 +74,13 @@
 });
 		
 	$(document).ready(function(){
-    $("#toggle").click(function(){
-        $("#w_bikes").slideToggle(500);
+    $(".menu").click(function(){
+        $("#.menu_down").slideToggle(500);
     });
-});		
+});	
+		
+		
+	
     </script> 
 	
 	
@@ -150,9 +153,16 @@
 		
 		<h2 class="page_title">Gear Up</h2>
 		
-		<h3>Bikes<span class="drop"> &raquo;</span></h3>
+		<div class="menu">
+			
+			<h3>Bikes</h3>
+			
+			<div img="image">
+				<img src="images/drop_down.png" alt="arrows" onclick="$(this).toggleClass('rotated');" />
+			</div>
+		</div>
 		
-		
+		<div class="menu_down">
 		<section id="w_bikes">
 <!-- Frist Model --->			
 			<div class="details">
@@ -275,7 +285,7 @@
 			</div>
 		
 		</section>
-
+</div>
 		
     </main>
     
