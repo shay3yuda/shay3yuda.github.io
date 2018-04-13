@@ -175,8 +175,23 @@ header h1 {
 	
 }
 	
+#wlogo {
 	
+	display:flex;
+	justify-content: space-between
+}
+
+#logo_container {
+position: relative;
+	bottom: 60px;
+	width: 200px;
+}
+
+#wlogo img {
 	
+	width: 100%; 
+}
+
  }
 /*end*/
 

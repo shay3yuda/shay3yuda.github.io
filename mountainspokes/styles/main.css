@@ -23,7 +23,14 @@ h1 {
     font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
 }
 
-h2, h3, h4, h5, h6 {
+h2 {
+	
+	font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
+	color: #617087;
+	font-size: 2em;
+}
+
+h3, h4, h5, h6 {
     
     color: #6B9DB2; 
     font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
@@ -361,10 +368,6 @@ main {
 	font-weight: 100;
 }
 
-#contact_page section {
-	
-	margin-bottom: 40px;
-}
 
 #contact_page section a {
 	
@@ -372,6 +375,11 @@ main {
 	font-size: .8em;
 	font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
 }
+#logo_container {
+	
+	width: 200px;
+}
+
 form {
 	
 	width: 100%;

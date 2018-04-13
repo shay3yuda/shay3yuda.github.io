@@ -62,6 +62,12 @@ form {
 	
 	width: 75%;
 }
+
+	#info_container {
+		width: 80%;
+		margin: auto;
+		
+	}
 	
 #contact_page .button {
 	
