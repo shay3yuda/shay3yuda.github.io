@@ -281,13 +281,13 @@ main {
 	background-color: #d7d8da;
 	margin-bottom: 10%;
 }
-#header_img {
+#header_img, #header_img_sm {
     
     width: 100%;
 	margin: 0px;
 }
 
-#header_img img{
+#header_img img, #header_img_sm img{
     
     width: 100%;
     opacity: .7;
@@ -541,7 +541,7 @@ fieldset textarea {
 	text-align: center;
 }
 
-.show{
+.show, show_2, show_3 {
 	
 	margin-bottom: 30px;
 }
