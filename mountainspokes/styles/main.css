@@ -1,6 +1,6 @@
 /* COLORS
     Dark Navy    #617087 / rgba(97, 112, 135, .5);		     
-    Navy         #6B9DB2 / rgba(107, 157, 178, .5);
+    Navy         #6B9DB2
 
     Lime Green   #C4CB23 / rgba (196, 203, 35, .6)
 
@@ -17,13 +17,13 @@ body {
     background-color: #d7d8da;
 }
 
-h1, h2 {
+h1 {
     
     color: #C4CB23;
     font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
 }
 
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     
     color: #6B9DB2; 
     font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
@@ -33,11 +33,6 @@ p {
     
     color: #6c6c6d;
     font-family: "Quicksand", Calibri, sans-serif;
-}
-
-.page_title {
-	
-	font-size: 2.5em;
 }
 
 .top_margin {
@@ -50,7 +45,7 @@ p {
 	width: 100%;
 } 
 
-/* ======= basic button style =======*/ 
+/* ======= basic button style =======*/
 .button {
 	
 	border:none;
@@ -95,8 +90,6 @@ a:visited {
 		
 }
 
-
-
 /* =======Header======== */
 header {
     width: 100%;
@@ -130,7 +123,7 @@ header h1 {
 	display: flex;
 	flex-flow: row;
 	flex-wrap: nowrap;
-	width:200px;
+	width: 140px;
 }
 
 
@@ -145,17 +138,18 @@ header h1 {
 }
 
 /* ======== NAV  Drop Down ========== */ 
-#drop_down_nav .nav_section {
+#drop_down_nav #nav_section, #drop_down_nav #nav_bar_section  {
     
     position: absolute;
     z-index: 3;  
     background-color: rgba(97, 112, 135, .6);
     padding-right: 13%;
+   	
 	margin-bottom: 0%;
 }
 
 
-#drop_down_nav .nav_section ul li {
+#drop_down_nav #nav_section ul li {
     
     list-style: none;
     font-family: "Quicksand", Calibri, sans-serif;
@@ -166,22 +160,21 @@ header h1 {
 }
 
 
-
-#drop_down_nav .nav_section ul li a:link {
+#drop_down_nav #nav_section ul li a:link {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#drop_down_nav .nav_section ul li a:visited {
+#drop_down_nav #nav_section ul li a:visited {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#drop_down_nav .nav_section ul li:hover {
+#drop_down_nav #nav_section ul li:hover {
     
     text-decoration: none;
     color: #C4CB23;
@@ -191,7 +184,7 @@ header h1 {
     
 }
 
-#drop_down_nav .nav_section ul li a:hover {
+#drop_down_nav #nav_section ul li a:hover {
 	
 	font-weight: 100;
 }
@@ -208,14 +201,14 @@ header h1 {
 }
 
 /* ====== nav bar ========= */
-/*
+
 #bar_nav {
 		
 		display: none;
 	}
 
 
-#bar_nav .nav_section {
+#bar_nav #nav_bar_section {
     
     position: absolute;
     z-index: 3;  
@@ -226,7 +219,7 @@ header h1 {
 }
 
 
-#bar_nav .nav_section ul li {
+#bar_nav #nav_bar_section ul li {
     
     list-style: none;
     font-family: "Quicksand", Calibri, sans-serif;
@@ -236,21 +229,21 @@ header h1 {
 }
 
 
-#bar_nav .nav_section ul li a:link {
+#bar_nav #nav_bar_section ul li a:link {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#bar_nav .nav_section ul li a:visited {
+#bar_nav #nav_bar_section ul li a:visited {
     
     text-decoration: none;
     color: #C4CB23;
     
 }
 
-#bar_nav .nav_section ul li a:hover {
+#bar_nav #nav_bar_section ul li a:hover {
     
     text-decoration: none;
     color: #C4CB23;
@@ -264,7 +257,14 @@ header h1 {
 
 /* ====== Way Finding ===== */
 
-
+.active_bar a {
+	
+	background-color: #617087;
+	border-bottom: 2px solid #c4cb23;
+	border-top: none;
+	font-weight: bold;
+	
+}
 
 /* ========== MAIN Index ============ */
 
@@ -274,13 +274,13 @@ main {
 	background-color: #d7d8da;
 	margin-bottom: 10%;
 }
-.header_img {
+#header_img {
     
     width: 100%;
 	margin: 0px;
 }
 
-.header_img img{
+#header_img img{
     
     width: 100%;
     opacity: .7;
@@ -347,12 +347,11 @@ main {
 .text_overlay h2 {
 	
 	background-color:  rgba(97, 112, 135, .5);
-	
+	color: #C4CB23;
 	padding-bottom: 1%;
 	margin-top: 0%;
 	text-decoration: none; 
 }
-
 /* ========== MAIN Contact Page ============ */
 
 .body_copy {
@@ -376,6 +375,7 @@ main {
 form {
 	
 	width: 100%;
+	margin: auto;
 }
 
 fieldset {
@@ -392,7 +392,7 @@ fieldset input, fieldset textarea {
 	
 	margin-bottom: 15px;
 	border: 1px solid #C4CB23;
-	background-color: #EBEBEC;
+	background-color: 	#d7d8da;
 	color: #6c6c6d;
 	padding: 4px;
 	font-family: "Quicksand", Calibri, sans-serif;
@@ -466,9 +466,6 @@ fieldset textarea {
 	padding: 10px;
 }
 
-
-
-
 /* ===== Sales Page ====== */
 
 .drop {
@@ -507,7 +504,17 @@ fieldset textarea {
 
 #sales_page section {
 	
+	width: 100%;
+	margin: auto;
 	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	grid-template-columns: 1fr;
+	margin-bottom: 10%;
+	margin-top: 5%;
+	
+	
+	
 }
 
 .info, .info_2, .info_3 {
@@ -526,9 +533,14 @@ fieldset textarea {
 	text-align: center;
 }
 
+.show{
+	
+	margin-bottom: 30px;
+}
+
 .model {
 	
-	background-color: rgba(107, 157, 178, .8);
+	background-color: rgba(97, 112, 135, .8);
 	margin-top: -3px;
 	margin-bottom: 0px;
 	padding-top: 10px;
@@ -540,10 +552,60 @@ fieldset textarea {
 }
 
 .details {
-	
+
+	max-width: 400px;
 	margin-right: 1%;
 	margin-left: 1%;
+	
 }
+
+/* ====== Service Page ===== */
+
+#table_group{
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 10%;
+		
+	margin: auto;
+	width: 100%;
+
+}
+table {
+	
+	padding: 10px;
+	margin-bottom: 10%;
+	max-width:300px;
+}
+
+th {
+	
+	color: #6B9DB2; 
+    font-family: "Asar", "Baskerville MT Pro SemiBd", serif;
+	font-size: 1.5em;
+	text-align: left;
+	
+}
+
+td {
+	
+	color: #6c6c6d;
+    font-family: "Quicksand", Calibri, sans-serif;
+}
+
+tbody td:first-child {
+	
+	width: 200px;
+}
+
+tbody tr:first-child, tbody tr:nth-child(3) {
+	
+	background-color: rgba(107, 157, 178, .5); 
+
+}
+
+
+
 
 /* ====== FOOTER ======= */
 
@@ -572,4 +634,3 @@ footer {
 	
 	color: #617087;
 }
-

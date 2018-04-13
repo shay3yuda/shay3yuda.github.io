@@ -14,8 +14,7 @@
     <meta name="description" content="Home Page">
 	
 	
-	<link rel="icon" href="images/logo_icon.png" />
-    
+    <link rel="icon" href="images/logo_icon.png" />
 
     <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
     
@@ -32,15 +31,15 @@
     <link href="styles/large.css" rel="stylesheet"><!-- large/wide/desktop views --> 
     
     
-   <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+  <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
         
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	
 	<script>
 		
 	$(document).ready(function(){
     $("#nav_button").click(function(){
-        $("#nav_section").slideToggle(500);
+        $("#nav_toggle").slideToggle(500);
     });
 	
 });
@@ -72,13 +71,13 @@
 
     <nav id="drop_down_nav">
 
-		<div id="nav_section">
-            <ul id="navList" class="hide">
-                <li><a href="index.html">Home</a></li>
+		<div id="nav_bar_section"> <!-- nav_section -->
+            <ul id="navList_bar"> <!-- navList -->
+                <li class="active"><a href="index.html">Home</a></li>
 
                 <li><a href="tours.html">Adventure Tours</a></li>
 
-                <li class="active"><a href="event.html">Events</a></li>
+                <li><a href="event.html">Events</a></li>
 
                 <li><a href="sales.html">Shop</a></li>
 
@@ -87,17 +86,22 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
+        
+        <div class="header_img">
+            <img src="images/bike_header_small.jpg" alt="logo">
+        </div> 
+      
   </nav>
 	
   <nav id="bar_nav">
 
-		<div id="nav_bar_section"> <!-- nav_section -->
-            <ul id="navList_bar"> <!-- navList -->
-                <li><a href="index.html">Home</a></li>
+		<div id="nav_section">
+            <ul class="nav_list">
+                <li class="active_bar"><a href="index.html">Home</a></li>
 
                 <li><a href="tours.html">Adventure Tours</a></li>
 
-                <li class="active_bar"><a href="event.html">Events</a></li>
+                <li><a href="event.html">Events</a></li>
 
                 <li><a href="sales.html">Shop</a></li>
 
@@ -106,47 +110,83 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-      
-  </nav>
-    
-    
-    <main id="contact_page" class="top_margin">
         
-       	<section>
-		
-		<h2 class="page_title">Contact Us</h2>
-		
-			<h3>The Mountain Spokes</h3>
-			<p>3950 Valley Commons Drive<br>Bozeman, MT 55333<br><a href="https://goo.gl/maps/KnsZ7zn87xP2">Show On Map</a></p>
+	  
+			<div class="header_img">
+				  <img src="images/bike_header.jpg" alt="logo">
 
-		</section>
-		
-		<section>
-		
-			<h4>Phone: <span class="body_copy">999-999-9999</span></h4>
-			
-			<h4>E-mail:<span class="body_copy"> mountainspoke@ride.com</span></h4>	
-		
-		</section>
-		
-		<form>
+				  <section id="register_container_medium_plus">
+					  
+					  	<div>
+							<h2>Ride the longest off-pavement route in the world</h2>
+
+							<p>Register Now to Cycle the Continental Divide!</p>
+					    </div>	
+
+						<div>	
+					  		<button class="button">Register </button>
+					   </div>	
+
+					</section>
+
+		  </div>
+	 
+	  
+      
+  </nav>	
+    
+    <main id="home">
 	
-			<fieldset>
-				
-				<legend><h3>Message Center</h3></legend>
+		 <section id="register_container">
 
-				<input type="text" name="name" id="name" placeholder="Name">
-				
-				<input type="email" name="email" id="email" placeholder="E-mail">
-				
-				<textarea id="comment" name="comment"  placeholder="Message Here..."></textarea>
-				
-				<button class="button">send</button>
-				
-			</fieldset>
+					<h2>Ride the longest off-pavement route in the world</h2>
+
+					<p>Register Now to Cycle the Continental Divide!</p>
+
+					<button class="button">Register </button>
+
+			</section>
 		
-		</form>
+			<aside>
+				<a href="sales.html"><section>
+
+					<div class="text_overlay">
+						<h2>Gear Up</h2>
+					</div>
+
+					<img src="images/shop_gear.jpg" alt="Three men with mountain bikes on top of a mountain.">
+
+					<p>Check out the latest mountain bikes and gear</p>
+				</section></a>
+		  
 		
+		
+				<a href="tours.html"><section>
+
+					<div class="text_overlay">
+						<h2>Find An Adventure</h2>
+					</div>
+
+					<img src="images/ad_tours.jpg" alt="A couple with mountain bikes at the top of a hill">
+
+					<p>Looking for an adventure? We have the great selection of those both sides of the Mississippi.</p>
+				</section></a>
+		  
+		
+		
+				<a href="service.html"><section>
+
+					<div class="text_overlay">
+						<h2>Need A Fix?</h2>
+					</div>
+
+					<img src="images/repair.jpg" alt="Man carrying a mountain bike up a hill.">
+
+					<p>Minor to major repairs, we got your covered. View our full list of services.</p>
+				</section></a>
+		  </aside>
+		
+
         
     </main>
     
@@ -170,8 +210,8 @@
       
       <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke </p>
       
-  </footer>
- 
+  </footer>   
 	
-</body>    
+</body> 
+	
 </html>

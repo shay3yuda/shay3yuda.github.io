@@ -1,0 +1,20 @@
+{
+	"services": [{
+		
+		"service": "Tune-Ups",
+		"type": ["Basic Tune-UP", "Premium Tune-Up", "Brake System Tune-Up", "Drivetrain Tune-Up"],
+		"cost": ["$39.99", "$69.99", "$24.99", "$24.99"]
+	}, {
+		"service": "Breaks",
+		"type": ["Install Rotor", "Bleed Hydraulic Disc Brake", "Install Rim Brake Set", "Install Hydraulic Disc Brakes", "Install Mechanicals Disc Brakes", "Adjust/Install Rim Brake Pads", "Adjust/Install Disc Brake Pads"],
+		"cost": ["$7.99", "$14.99", "$12.99", "$24.99", "$14.99", "$9.99", "$14.99"]
+	}, {
+		"service": "Wheels",
+		"type": ["Install Inner Tube", "Repair Inner Tube", "True Wheel", "Install Spoke (Each)", "Adjust Hub (Front or Rear)", "Overhaul Front Hub", "Overhaul Rear Hub"],
+		"cost": ["$6.99", "$8.99", "$12.99", "$5.99", "$5.99", "$14.99", "$18.99"]
+	}, {
+		"service": "Installs",
+		"type": ["Child Carrier", "Cycle Computer", "Fenders", "Rear Rack", "Saddle", "Water Bottle Cage"],
+		"cost": ["$14.99", "$9.99", "$12.99", "$4.99", "$1.99", "$1.99"]
+	}]
+}
