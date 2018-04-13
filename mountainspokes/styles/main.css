@@ -155,6 +155,10 @@ header h1 {
 	margin-bottom: 0%;
 }
 
+#nav_section {
+	
+	display:none;
+}
 
 #drop_down_nav #nav_section ul li {
     
